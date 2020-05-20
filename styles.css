@@ -1,17 +1,77 @@
 body {
+    margin: 0px 0px;
     /* background-image: url('images/image5.jpg'); */
-    background-size: 100%;
+    /* background-size: 100%; */
 }
 
+.nav {
+    margin: 0px 0px;
+}
+
+#logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    margin: 5px 20px;
+    float: left;
+    text-decoration: none;
+}
+
+#logo:visited {
+    color: black;
+}
+
+#logo:hover {
+    animation: bounce 0.5s 1;
+   -webkit-animation: bounce 0.5s 1;
+   -moz-animation: bounce 0.5s 1;
+   -o-animation: bounce 0.5s 1;
+}
+
+ul {
+    font-family: 'Roboto Slab', serif;
+    list-style-type: none;
+    margin-right: 50px;
+    float: right;
+}
+
+li {
+    float: left;
+    padding: 15px 30px;
+}
+
+
+
 #description {
-    text-align: center;
+    padding: 10px 50px;
+    padding-top: 100px;
+    margin: auto;
+    width: 70%;
+    text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
 }
 
+#hiDesc {
+    margin-bottom: 0px;
+    font-family: 'DM Mono', monospace;
+    font-size: 15px;
+}
+
+#name {
+    font-size: 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 0px 0px 0px;
+}
+
+#nameDesc {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 45px;
+    margin: 0px 0px 0px 0px;
+}
+
 #descriptionParagraph {
+    width: 70%;
     text-align: left;
-    margin: 10px 100px;
     overflow-wrap: break-word;
 }
 
@@ -30,8 +90,43 @@ body {
 
 #school-link:link {
     text-decoration: none;
+    color: black;
 }
 
 #school-link:visited {
-    color: black
+    color: black;
+}
+
+
+@-webkit-keyframes bounce {
+    0%,  
+    100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-15px);}
+    60% {-webkit-transform: translateY(0);}
+    70% {-webkit-transform: translateY(-5px);}
+    100% {-webkit-transform: translateY(0);}
+}
+@-moz-keyframes bounce {
+    0%, 
+    100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(-15px);}
+    60% {-moz-transform: translateY(0);}
+    70% {-moz-transform: translateY(-5px);}
+    100% {-moz-transform: translateY(0);}
+}
+@-o-keyframes bounce {
+    0%,
+    100% {-o-transform: translateY(0);}
+    40% {-o-transform: translateY(-15px);}
+    60% {-o-transform: translateY(0);}
+    70% {-o-transform: translateY(-5px);}
+    100% {-o-transform: translateY(0);}
+}
+@keyframes bounce {
+    0%,  
+    100% {transform: translateY(0);}
+    40% {transform: translateY(-15px);}
+    60% {transform: translateY(0);}
+    70% {transform: translateY(-5px)}
+    100% {transform: translateY(0)}
 }
