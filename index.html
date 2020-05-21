@@ -4,11 +4,11 @@
     <head>
     <title>Nathan Tang</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Montserrat&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
 
     </head>
 
-    <body>
+    <body onload="typeText()">
 
         <div class="nav">
             <a id="logo" href="https://nathanlytang.me/">N.</a>
@@ -21,32 +21,15 @@
         </div>
 
         <div id="description">
-            <p id="hiDesc">Hi there! &#160I'm</p>
+            <p id="hiDesc"></p>
             <p id="name">Nathan.</p>
             <p id="nameDesc">I love building things.</p>
-            <p id="descriptionParagraph">
-                From web-based products, mobile or desktop applications, or anything in between, my interest is piqued.  I am currently a computing science student <b><a id="school-link" href="https://www.ualberta.ca/" target="_blank">@<u>UAlberta</u></a></b> in Edmonton, CA, and I'm always searching for new opportunities to grow, practice, and learn.
-            </p>
-        <!-- </div id="projects">
-            <p>Some of the things I have worked on:</p>
-            <div>
-                <h3 class="projectSectionTitles">
-                    Inventory Manager
-                </h3>
-                <p class="projectSectionDes">
-                    An inventory manager built in Python, utilizing Tkinter, SQLAlchemy, and SQLite.
-                </p>
-            </div>
-            <div>
-                <h3  class="projectSectionTitles">
-                    ToDo
-                </h3>
-                <p>
-                    A to do app built with Javascript, using the Electron framework and Node.js
-                </p>
-            </div> -->
-            
+            <p id="descriptionParagraph">From web-based products, mobile or desktop applications, or anything in between, my interest is piqued.  I am currently a computing science student <b><a id="school-link" href="https://www.ualberta.ca/" target="_blank">@<u>UAlberta</u></a></b> in Edmonton, CA, and I'm always searching for new opportunities to grow, practice, and learn.</p>
+            <a id="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
         </div>
         
+        <div id="scrollDown" onclick="window.location.href='https://nathanlytang.me/'"></div> <!--Placeholder link, will scroll-->
+
+        <script src="main.js"></script>
     </body>
 </html>
