@@ -2,6 +2,7 @@ body {
     margin: 0px 0px;
     /* background-image: url('images/image5.jpg'); */
     /* background-size: 100%; */
+    /* background-color: #3afccc; */
 }
 
 .nav {
@@ -10,9 +11,9 @@ body {
 
 #logo {
     font-family: 'Roboto Slab', serif;
-    font-size: 50px;
-    margin: 5px 20px;
-    padding-bottom: 5px;
+    font-size: 6vh;
+    margin: 1vh 2.5vh;
+    padding-bottom: 1vh;
     float: left;
     text-decoration: none;
     color: black;
@@ -32,18 +33,34 @@ body {
 ul {
     font-family: 'Roboto Slab', serif;
     list-style-type: none;
-    margin-right: 50px;
+    margin-right: 5.3vh;
     float: right;
 }
 
 li {
     float: left;
-    padding: 15px 30px;
+    padding: 1.6vh 3.2vh;
+}
+/* 
+#belowNav {
+    height: 100vh;
+    margin: 0;
+    background: #3afccc;
 }
 
+#belowNav:before {
+      content: "";
+      width: 32vh;
+      background: #000;
+      transform: skew(-30deg);
+      transform-origin:top;
+}
+ */
+
+
 #description {
-    padding: 10px 50px;
-    padding-top: 100px;
+    padding: 1vw 5.3vh;
+    padding-top: 10.67vh;
     margin: auto;
     width: 70%;
     text-align: left;
@@ -54,7 +71,7 @@ li {
 #hiDesc {
     margin-bottom: 0px;
     font-family: 'DM Mono', monospace;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 #name {
@@ -65,7 +82,7 @@ li {
 
 #nameDesc {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 45px;
+    font-size: 4.8vh;
     margin: 0px 0px 0px 0px;
 }
 
@@ -73,16 +90,17 @@ li {
     width: 70%;
     text-align: left;
     overflow-wrap: break-word;
-    margin-bottom: 100px;
+    margin-bottom: 10.67vh;
+    font-size: 1rem;
 }
 
 #letsTalkButton {
-    margin-top: 5px;
+    margin-top: 0.53vh;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-width: 0.2vh;
+    padding: 1vh 2.1vh;
+    border-radius: 0.53vh;
     text-decoration: none;
     color: black;
 }
@@ -93,7 +111,7 @@ li {
 
 #scrollDown {
     margin-left: 50%;
-    margin-top: 200px;
+    margin-top: 21.3vh;
     width: 2rem;
     height: 2rem;
     border: black;
@@ -110,6 +128,7 @@ li {
     cursor: pointer;
     opacity: 60%;
 }
+
 
 #projects {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -138,57 +157,57 @@ li {
 @-webkit-keyframes bounce {
     0%,  
     100% {-webkit-transform: translateY(0);}
-    40% {-webkit-transform: translateY(-15px);}
+    40% {-webkit-transform: translateY(-1.6vh);}
     60% {-webkit-transform: translateY(0);}
-    70% {-webkit-transform: translateY(-5px);}
+    70% {-webkit-transform: translateY(-0.533vh);}
     100% {-webkit-transform: translateY(0);}
 }
 @-moz-keyframes bounce {
     0%, 
     100% {-moz-transform: translateY(0);}
-    40% {-moz-transform: translateY(-15px);}
+    40% {-moz-transform: translateY(-1.6vh);}
     60% {-moz-transform: translateY(0);}
-    70% {-moz-transform: translateY(-5px);}
+    70% {-moz-transform: translateY(-0.533vh);}
     100% {-moz-transform: translateY(0);}
 }
 @-o-keyframes bounce {
     0%,
     100% {-o-transform: translateY(0);}
-    40% {-o-transform: translateY(-15px);}
+    40% {-o-transform: translateY(-1.6vh);}
     60% {-o-transform: translateY(0);}
-    70% {-o-transform: translateY(-5px);}
+    70% {-o-transform: translateY(-0.533vh);}
     100% {-o-transform: translateY(0);}
 }
 @keyframes bounce {
     0%,  
     100% {transform: translateY(0);}
-    40% {transform: translateY(-15px);}
+    40% {transform: translateY(-1.6vh);}
     60% {transform: translateY(0);}
-    70% {transform: translateY(-5px)}
+    70% {transform: translateY(-0.533vh)}
     100% {transform: translateY(0)}
 }
 
 @-webkit-keyframes arrowPrompt {
     0%,
     100% {-webkit-transform: translateY(0) rotate(45deg);}
-    90% {-webkit-transform: translateY(20px) rotate(45deg);}
+    90% {-webkit-transform: translateY(2.13vh) rotate(45deg);}
     80% {-webkit-transform: translateY(0) rotate(45deg);}
 }
 @-moz-keyframes arrowPrompt {
     0%,
     100% {-moz-transform: translateY(0) rotate(45deg);}
-    90% {-moz-transform: translateY(20px) rotate(45deg);}
+    90% {-moz-transform: translateY(2.13vh) rotate(45deg);}
     80% {-moz-transform: translateY(0) rotate(45deg);}
 }
 @-o-keyframes arrowPrompt {
     0%,
     100% {-o-transform: translateY(0) rotate(45deg);}
-    90% {-o-transform: translateY(20px) rotate(45deg);}
+    90% {-o-transform: translateY(2.13vh) rotate(45deg);}
     80% {-o-transform: translateY(0) rotate(45deg);}
 }
 @keyframes arrowPrompt {
     0%,
     100% {transform: translateY(0) rotate(45deg);}
-    90% {transform: translateY(20px) rotate(45deg);}
+    90% {transform: translateY(2.13vh) rotate(45deg);}
     80% {transform: translateY(0) rotate(45deg);}
 }
