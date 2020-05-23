@@ -11,7 +11,7 @@ body {
 
 #logo {
     font-family: 'Roboto Slab', serif;
-    font-size: 6vh;
+    font-size: 3.2rem;
     margin: 1vh 2.5vh;
     padding-bottom: 1vh;
     float: left;
@@ -39,7 +39,7 @@ ul {
 
 li {
     float: left;
-    padding: 1.6vh 3.2vh;
+    padding: 1.6vh 1.7rem;
 }
 /* 
 #belowNav {
@@ -82,7 +82,7 @@ li {
 
 #nameDesc {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 4.8vh;
+    font-size: 2.5rem;
     margin: 0px 0px 0px 0px;
 }
 
