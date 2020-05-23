@@ -15,6 +15,7 @@ body {
     margin: 1vh 2.5vh;
     padding-bottom: 1vh;
     float: left;
+    /* display: inline-block; */
     text-decoration: none;
     color: black;
 }
@@ -39,6 +40,7 @@ ul {
 
 li {
     float: left;
+    /* display: inline-block; */
     padding: 1.6vh 1.7rem;
 }
 /* 
@@ -56,6 +58,16 @@ li {
       transform-origin:top;
 }
  */
+
+#belowNav {
+    clear: both;
+    width: 80%;
+    margin: 0px auto;
+    /* background: #3afccc; */
+    background-size: 10%;
+    height: 100%;
+    /* background: linear-gradient(#ffffff 80%, #3afccc 80%); */
+ }
 
 
 #description {
