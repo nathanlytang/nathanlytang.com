@@ -43,31 +43,6 @@ li {
     /* display: inline-block; */
     padding: 1.6vh 1.7rem;
 }
-/* 
-#belowNav {
-    height: 100vh;
-    margin: 0;
-    background: #3afccc;
-}
-
-#belowNav:before {
-      content: "";
-      width: 32vh;
-      background: #000;
-      transform: skew(-30deg);
-      transform-origin:top;
-}
- */
-
-#belowNav {
-    clear: both;
-    width: 80%;
-    margin: 0px auto;
-    /* background: #3afccc; */
-    background-size: 10%;
-    height: 100%;
-    /* background: linear-gradient(#ffffff 80%, #3afccc 80%); */
- }
 
 
 #description {
@@ -106,6 +81,15 @@ li {
     font-size: 1rem;
 }
 
+#school-link:link {
+    text-decoration: none;
+    color: black;
+}
+
+#school-link:visited {
+    color: black;
+}
+
 #letsTalkButton {
     margin-top: 0.53vh;
     border-style: solid;
@@ -121,9 +105,38 @@ li {
     color: black;
 }
 
+
+/* 
+#belowNav {
+    height: 100vh;
+    margin: 0;
+    background: #3afccc;
+}
+
+#belowNav:before {
+      content: "";
+      width: 32vh;
+      background: #000;
+      transform: skew(-30deg);
+      transform-origin:top;
+}
+ */
+
+ #belowNav {
+    clear: both;
+    width: 80%;
+    margin: 0px auto;
+    /* background: #3afccc; */
+    background-size: 10%;
+    height: 100%;
+    /* background: linear-gradient(#ffffff 80%, #3afccc 80%); */
+    /* border: solid black; */
+ }
+
 #scrollDown {
     margin-left: 50%;
     margin-top: 21.3vh;
+    margin-bottom: 21vh;
     width: 2rem;
     height: 2rem;
     border: black;
@@ -142,27 +155,24 @@ li {
 }
 
 
+
 #projects {
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    min-width: 60vw;
+    max-width: 64vw;
+    grid-gap: 0.5rem;
+    list-style: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .projectGallery {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    background-color: lightblue;
+    height: 25rem;
+  }
 
-.projectSectionTitles {
-    color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.projectSectionDes {
-    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-#school-link:link {
-    text-decoration: none;
-    color: black;
-}
-
-#school-link:visited {
-    color: black;
-}
 
 /* Keyframe Animations */
 
