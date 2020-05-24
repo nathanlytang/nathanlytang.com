@@ -7,66 +7,85 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Montserrat&family=Roboto+Slab:wght@300;400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body onload="typeText()">
 
-    <div class="nav">
-        <a id="logo" href="https://nathanlytang.me/">N.</a>
-        <ul>
-            <li><a>About</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
-            <li><a>Resume</a></li>
-        </ul>
-    </div>
-
-    <div id="description">
-        <p id="hiDesc"></p>
-        <p id="name">Nathan.</p>
-        <p id="nameDesc">I love building things.</p>
-        <p id="descriptionParagraph">From web-based products, mobile or desktop applications, or anything in
-            between, my interest is piqued. I am currently a computing science student <b><a id="school-link"
-                    href="https://www.ualberta.ca/" target="_blank">@<u>UAlberta</u></a></b> in Edmonton, CA, and
-            I'm always searching for new opportunities to grow, practice, and learn.</p>
-        <a id="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
+    <a id="logo" href="https://nathanlytang.me/">N.</a>
+    <div class="navbar" id="navbar">
+        <div id='navFloat'>
+            <div id="navlinktop">
+                <a href='' class="navlink">About</a>
+                <a href='#projects'class="navlink">Projects</a>
+                <a href='' class="navlink">Contact</a>
+                <a href=''class="navlink">Resume</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                <img id="hamburgerMenuImage" src="images/hamburger.svg"></a>
+        </div>
     </div>
 
     <div id="belowNav">
-        <div id="scrollDown" onclick="window.location.href='https://nathanlytang.me/'"></div>
-        <!--Placeholder link, will scroll-->
+        <div id="backgroundWrapper">
+            <div id="description">
+                <p id="hiDesc"></p>
+                <p id="name">Nathan.</p>
+                <p id="nameDesc">I love building things.</p>
+                <p id="descriptionParagraph">From web-based products, mobile or desktop applications, or anything in
+                    between, my interest is piqued. I am currently a computing science student <b><a id="school-link"
+                            href="https://www.ualberta.ca/" target="_blank">@<u>UAlberta</u></a></b> in Edmonton, CA, and
+                    I'm always searching for new opportunities to grow, practice, and learn.</p>
+                <a id="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
+             
+            </div>   
+            <div id="scrollSkew">
+                <div id="scrollDown" onclick="window.location.href='#projects'"></div>
+            </div>
+        </div>
 
         <div id="projects">
+            <!-- <h2>Projects</h2> -->
+            <div id="projectsTiles">
+                <div class="projectGallery">
+                    <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/ToDo"><img src="images/GitHub-Mark-32px.png"></a>
+                    <p class="projectTitles">Inhabit</p>
+                    <p class="projectDesc">Inhabit is a simple to-do list desktop app built in the open-source Electron
+                        framework. Taking advantage of modern web UI capabilities, this app was built with a sleek interface in mind.</p>
+                    <p class="projectKeywords">Electron HTML5 CSS3 JS</p>
+                </div>
 
-            <div class="projectGallery">
-                <h class="projectTitles">Project 1</h>
-                <p class="projectDesc">Project 1 description</p>
-            </div
-            ><div class="projectGallery">
-                <h class="projectTitles">Project 2</h>
-                <p class="projectDesc">Project 2 description</p>
-            </div
-            ><div class="projectGallery">
-                <h class="projectTitles">Project 3</h>
-                <p class="projectDesc">Project 3 description</p>
-            </div
-            ><div class="projectGallery">
-                <h class="projectTitles">Project 4</h>
-                <p class="projectDesc">Project 4 description</p>
-            </div
-            ><div class="projectGallery">
-                <h class="projectTitles">Project 5</h>
-                <p class="projectDesc">Project 5 description</p>
-            </div
-            ><div class="projectGallery">
-                <h class="projectTitles">Project 6</h>
-                <p class="projectDesc">Project 6 description</p>
+                <div class="projectGallery">
+                    <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/InventoryManager"><img src="images/GitHub-Mark-32px.png"></a>
+                    <p class="projectTitles">Inventory Manager</p>
+                    <p class="projectDesc">An inventory manager program built in Python.  Uses the Tkinter GUI Framework and SQLite.</p>
+                    <p class="projectKeywords">Python3 Tkinter SQLite</p>
+                </div>
+
+                <div class="projectGallery">
+                    <p class="projectTitles">Project 3</p>
+                    <p class="projectDesc">Project 3 description</p>
+                </div>
+
+                <div class="projectGallery">
+                    <p class="projectTitles">Project 4</p>
+                    <p class="projectDesc">Project 4 description</p>
+                </div>
+
+                <div class="projectGallery">
+                    <p class="projectTitles">Project 5</p>
+                    <p class="projectDesc">Project 5 description</p>
+                </div>
+
+                <div class="projectGallery">
+                    <p class="projectTitles">Project 6</p>
+                    <p class="projectDesc">Project 6 description</p>
+                </div>
             </div>
-
-
         </div>
+
 
     </div>
 
