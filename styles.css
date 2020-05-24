@@ -1,7 +1,25 @@
+:root {
+    --background-color: white;
+    --forground-color: white;
+    /* --foreground-color: #36F1CD; */
+    --shade-color: white;
+    --accent-color: black;
+    --title-color: black;
+    --description-color: black;
+}
+
+
 body {
     margin: 0px 0px;
     z-index: 1;
+    background-color: var(--background-color);
 }
+
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navigation Bar */
 
 .navbar {
     overflow: hidden;
@@ -16,10 +34,11 @@ body {
 }
 
 .navbar .navlink {
-    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'DM Mono', monospace;
     float: left;
     display: block;
-    color: black;
+    color: var(--title-color);
     text-align: center;
     text-decoration: none;
     margin: 2.5rem 1.8rem;
@@ -28,6 +47,7 @@ body {
 .navbar .icon {
     display: none;
     margin: 1.5rem;
+    /* filter: invert(90%); */
 }
 
 @media screen and (max-width: 600px) {
@@ -49,11 +69,9 @@ body {
         right: 0;
         top: 0;
     }
-
     .navbar.responsive #navlinktop {
         margin-top: 4rem;
     }
-
     .navbar.responsive .navlink {
         font-size: 1.3rem;
         float: none;
@@ -63,6 +81,8 @@ body {
     }
 }
 
+/* Logo */
+
 #logo {
     font-family: 'Roboto Slab', serif;
     font-size: 3.2rem;
@@ -70,11 +90,11 @@ body {
     padding-bottom: 1vh;
     float: left;
     text-decoration: none;
-    color: black;
+    color: var(--title-color);
 }
 
 #logo:visited {
-    color: black;
+    color: var(--title-color);
 }
 
 #logo:hover {
@@ -86,8 +106,10 @@ body {
 
 #backgroundWrapper {
     width: 100%;
-    /* background: linear-gradient(170deg, #fff 0%, #fff 60%, #B1EDE8 60%, #B1EDE8 100%); */
+    background: linear-gradient(170deg, var(--background-color) 0%, var(--background-color) 60%, var(--foreground-color) 60%, var(--foreground-color) 100%);
 }
+
+/* Description Section */
 
 #description {
     clear: both;
@@ -97,19 +119,21 @@ body {
     width: 70%;
     text-align: left;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
+    color: var(--description-color);
 }
 
 #hiDesc {
     margin-bottom: 0px;
     font-family: 'DM Mono', monospace;
     font-size: 0.9rem;
+    color: var(--accent-color);
 }
 
 #name {
     font-size: 5rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px 0px 0px 0px;
+    color: var(--title-color);
 }
 
 #nameDesc {
@@ -128,22 +152,22 @@ body {
 
 #school-link:link {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 #school-link:visited {
-    color: black;
+    color: inherit;
 }
 
 #letsTalkButton {
     margin-top: 0.53vh;
     border-style: solid;
-    border-color: black;
+    border-color: var(--accent-color);
     border-width: 0.2vh;
     padding: 1vh 2.1vh;
     border-radius: 0.53vh;
     text-decoration: none;
-    color: black;
+    color: var(--accent-color);
 }
 
 #letsTalkButton:visited {
@@ -155,7 +179,7 @@ body {
     /* z-index: -1; */
     width: 100%;
     margin: 0px auto;
-    /* background-color: #B1EDE8; */
+    background-color: var(--foreground-color);
 }
 
 #scrollDown {
@@ -164,7 +188,7 @@ body {
     margin-bottom: 21vh;
     width: 2rem;
     height: 2rem;
-    border: black;
+    border: var(--accent-color);
     border-style: solid;
     border-width: 0 0.2rem 0.2rem 0;
     transform: rotate(45deg);
@@ -178,6 +202,8 @@ body {
     cursor: pointer;
     opacity: 60%;
 }
+
+/* Projects Section */
 
 #projects {
     width: 80%;
@@ -211,13 +237,13 @@ body {
 }
 
 .projectGallery {
-    padding: 1rem;
+    padding: 2rem 2rem 0 2rem;
     color: #071013;
-    background-color: white;
     height: 20rem;
     position: relative;
     border: 1px solid black;
     border-radius: 0.2em;
+    background-color: var(--shade-color);
 }
 
 .projectGallery:hover {
@@ -226,6 +252,13 @@ body {
 
 .projectGitLink {
     float: right;
+    width: 10%;
+}
+
+.gitLogo {
+    width: 100%;
+    float: right;
+    /* filter: invert(100%); */
 }
 
 .projectGitLink:hover { /* Temp bounce effect */
@@ -237,24 +270,28 @@ body {
 
 .projectTitles {
     clear: both;
-    margin-top: 6rem;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.1rem;
-    font-weight: 900;
+    font-weight: 500;
+    color: var(--title-color);
 }
 
 .projectDesc {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 2rem;
     margin-right: 2rem;
+    color: var(--description-color);
+    font-size: 0.98rem;
 }
 
 .projectKeywords {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'DM Mono', 'Courier New', Courier, monospace;
     font-size: 0.8rem;
     position: absolute;
-    bottom: 0px;
-    word-spacing: 1em;
+    bottom: 2rem;
+    word-spacing: 0.8em;
+    color: var(--description-color);
 }
 
 /* Keyframe Animations */
