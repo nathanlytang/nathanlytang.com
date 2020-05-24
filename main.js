@@ -9,3 +9,14 @@ function typeText() {
     setTimeout(typeText, speed);
   }
 }
+
+function hamburgerMenu() {
+  var x = document.getElementById("navbar");
+  if (x.className == "navbar") {
+    x.className += " responsive";
+    document.getElementById("hamburgerMenuImage").src = "images/exit.svg"
+  } else {
+    x.className = "navbar";
+    document.getElementById("hamburgerMenuImage").src = "images/hamburger.svg"
+  }
+}
