@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Montserrat&family=Roboto+Slab:wght@300;400&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body onload="typeText()">
+
+    <a id="logo" href="https://nathanlytang.me/">N.</a>
+    <div class="navbar" id="navbar">
+        <div id='navFloat'>
+            <div id="navlinktop">
+                <a href='https://nathanlytang.me' class="navlink">About</a>
+                <a href='https://nathanlytang.me/#projects' class="navlink">Projects</a>
+                <a href='https://nathanlytang.me/#contact' class="navlink">Contact</a>
+                <a href='resume.html' class="navlink">Resume</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                <img id="hamburgerMenuImage" src="images/hamburger.svg"></a>
+        </div>
+    </div>
+
+    <div id="resume">
+
+        <h2>Resume.</h2>
+
+        <iframe src="resume.pdf#toolbar=0"></iframe>
+        <a class="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
