@@ -6,6 +6,7 @@
     --accent-color: black;
     --title-color: black;
     --description-color: black;
+    --filter-inverted: invert(0);
 }
 
 
@@ -17,6 +18,8 @@ body {
 
 h2 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -47,7 +50,7 @@ h2 {
 .navbar .icon {
     display: none;
     margin: 1.5rem;
-    /* filter: invert(90%); */
+    filter: var(--filter-inverted);
 }
 
 @media screen and (max-width: 600px) {
@@ -159,7 +162,8 @@ h2 {
     color: inherit;
 }
 
-#letsTalkButton {
+.letsTalkButton {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 0.53vh;
     border-style: solid;
     border-color: var(--accent-color);
@@ -170,7 +174,7 @@ h2 {
     color: var(--accent-color);
 }
 
-#letsTalkButton:visited {
+.letsTalkButton:visited {
     color: black;
 }
 
@@ -208,6 +212,7 @@ h2 {
 #projects {
     width: 80%;
     margin: 0 auto 1rem auto;
+    padding-top: 5vh;
 }
 
 @media only screen and (min-width: 600px) {
@@ -242,7 +247,7 @@ h2 {
     height: 20rem;
     position: relative;
     border: 1px solid black;
-    border-radius: 0.2em;
+    border-radius: 0.25em;
     background-color: var(--shade-color);
 }
 
@@ -258,7 +263,7 @@ h2 {
 .gitLogo {
     width: 100%;
     float: right;
-    /* filter: invert(100%); */
+    filter: var(--filter-inverted);
 }
 
 .projectGitLink:hover { /* Temp bounce effect */
@@ -292,6 +297,95 @@ h2 {
     bottom: 2rem;
     word-spacing: 0.8em;
     color: var(--description-color);
+}
+
+/* Contact Section */
+
+@media only screen and (min-width: 600px) {
+    #contact {
+        width: 80%;
+        margin: 12rem auto;
+        padding-top: 5vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #contact {
+        width: 80%;
+        margin: 8rem auto;
+        padding-top: 5vh;
+        text-align: center;
+    }
+}
+
+#contactDesc {
+    width: 60%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    margin: 5rem auto;
+}
+
+#footer {
+    vertical-align: middle;
+    display: inline-flex;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 600px) {
+    .footerLogo {
+        display: inline-table;
+        width: 2rem;
+        margin: 8rem 1rem 5rem;
+        filter: var(--filter-inverted);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footerLogo {
+        width: 3rem;
+        margin: 1rem 1rem 5rem;
+        filter: var(--filter-inverted);
+    }
+}
+
+
+/* Resume Page */
+
+@media only screen and (min-width: 600px) {
+    #resume {
+        width: 80%;
+        height: 120vh;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+    }
+
+    iframe {
+        display: block;
+        width: 56%;
+        height: 80%;
+        margin: 5rem auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #resume {
+        width: 90%;
+        height: 80vh;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+    }
+    
+    iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 5rem 0;
+    }    
 }
 
 /* Keyframe Animations */
