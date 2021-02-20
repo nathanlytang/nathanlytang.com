@@ -20,3 +20,11 @@ function hamburgerMenu() {
     document.getElementById("hamburgerMenuImage").src = "images/hamburger.svg"
   }
 }
+
+document.addEventListener("adobe_dc_view_sdk.ready", function () {
+  var adobeDCView = new AdobeDC.View({ clientId: "a319c2c4b18a46beada55d907ca135d3", divId: "adobe-dc-view" });
+  adobeDCView.previewFile({
+    content: { location: { url: "Nathan Tang - Resume.pdf" } },
+    metaData: { fileName: "Nathan Tang - Resume.pdf" }
+  }, { embedMode: "IN_LINE" });
+});
