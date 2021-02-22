@@ -255,9 +255,9 @@ h2 {
     color: #071013;
     height: 20rem;
     position: relative;
-    border: 1px solid black;
     border-radius: 0.25em;
     background-color: var(--shade-color);
+    box-shadow: 1px 1px 10px 1px #dadada;
 }
 
 .projectGallery:hover {
@@ -267,6 +267,7 @@ h2 {
 .projectGitLink {
     float: right;
     width: 10%;
+    opacity: 0.9;
 }
 
 .gitLogo {
@@ -276,6 +277,26 @@ h2 {
 }
 
 .projectGitLink:hover { /* Temp bounce effect */
+    animation: bounce 0.5s 1;
+    -webkit-animation: bounce 0.5s 1;
+    -moz-animation: bounce 0.5s 1;
+    -o-animation: bounce 0.5s 1;
+}
+
+.projectLink {
+    float: right;
+    width: 10%;
+    margin-left: 10px;
+}
+
+.extern {
+    width: 100%;
+    float: right;
+    filter: var(--filter-inverted);
+    margin-left: 10px;
+}
+
+.projectLink:hover { /* Temp bounce effect */
     animation: bounce 0.5s 1;
     -webkit-animation: bounce 0.5s 1;
     -moz-animation: bounce 0.5s 1;
