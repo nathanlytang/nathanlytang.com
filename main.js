@@ -1,6 +1,7 @@
 var i = 0;
 var txt = "Hi there! I'm";
 var speed = 50;
+const toggle = document.getElementById("toggle");
 
 function typeText() {
     if (i < txt.length) {
@@ -28,3 +29,38 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         metaData: { fileName: "Nathan Tang - Resume.pdf" }
     }, { embedMode: "IN_LINE" });
 });
+
+function setTheme(theme, persist) {
+    const on = theme;
+    const off = theme === 'light' ? 'dark' : 'light'
+
+    const doc = document.documentElement;
+    doc.classList.add(on);
+    doc.classList.remove(off);
+
+    if (persist) {
+        localStorage.setItem('preferred-theme', theme);
+    }
+}
+
+function updateUI(theme) {
+    toggle.checked = theme === 'dark';
+}
+
+toggle.addEventListener('click', () => {
+    const theme = toggle.checked ? 'dark' : 'light';
+    setTheme(theme, true);
+    updateUI(theme);
+});
+
+const osPreference = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+const preferredTheme = localStorage.getItem('preferred-theme') || osPreference;
+
+setTheme(preferredTheme, false);
+updateUI(preferredTheme);
+
+if (preferredTheme === 'light') {
+    document.getElementById("toggle").checked = false;
+} else {
+    document.getElementById("toggle").checked = true;
+}
