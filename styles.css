@@ -428,6 +428,23 @@ a {
     color: var(--description-color);
 }
 
+#more-button {
+    font-family: 'DM Mono', 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 6vh auto;
+    text-align: center;
+}
+
+#projects-page {
+    width: 100%;
+}
+
+#project-page-desc {
+    text-align: center;
+    margin: 0vh auto 5vh auto;
+}
+
 /* Contact Section */
 
 @media only screen and (min-width: 600px) {

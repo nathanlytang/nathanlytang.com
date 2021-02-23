@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume</title>
+    <link rel='icon' href='icon.png' type='image/png' />
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Montserrat&family=Roboto+Slab:wght@300;400&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body onload="typeText()">
+
+    <a id="logo" href="index.html">N.</a>
+    <div class="navbar" id="navbar">
+        <div id='navFloat'>
+            <div id="navlinktop">
+                <a href='about.html' class="navlink">About</a>
+                <a href='index.html#projects' class="navlink">Projects</a>
+                <a href='index.html#contactIndex' class="navlink">Contact</a>
+                <a href='resume.html' class="navlink">Resume</a>
+                <label class="switch navlink"><input id="toggle" type="checkbox"><span
+                        class="slider round"></span></label>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                <img id="hamburgerMenuImage" src="images/hamburger.svg"></a>
+        </div>
+    </div>
+
+    <div id="projects-page" class="projects">
+        <h2>Projects.</h2>
+        <p id="project-page-desc" class="projectDesc">Some more projects I have worked on!</p>
+        <div id="projectsTiles">
+            <div class="projectGallery">
+                <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/wg-cli"><img
+                        class="gitLogo" src="images/GitHub-Mark-120px.svg"></a>
+                <p class="projectTitles">wg-cli</p>
+                <p class="projectDesc">A tool to automate and manage WireGuard™ peers. Made to complement the
+                    existing wireguard-tools subset.</p>
+                <p class="projectKeywords">C Wireguard</p>
+            </div>
+
+            <div class="projectGallery">
+                <a class="projectLink" target="_blank" href="https://top.gg/bot/773117222380896276"><img
+                        class="extern" src="images/external-link-1200px.png"></a>
+                <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/Steve"><img
+                        class="gitLogo" src="images/GitHub-Mark-120px.svg"></a>
+                <p class="projectTitles">Steve</p>
+                <p class="projectDesc">A Discord bot built for gaming communities. Provides an easily
+                    accessible and status panel for Minecraft servers.</p>
+                <p class="projectKeywords">JS Node.js Docker</p>
+            </div>
+            
+            <div class="projectGallery">
+                <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/inhabit"><img
+                        class="gitLogo" src="images/GitHub-Mark-120px.svg"></a>
+                <p class="projectTitles">Inhabit</p>
+                <p class="projectDesc">Inhabit is a simple to-do list desktop app built in the open-source Electron
+                    and NodeJS environment.</p>
+                <p class="projectKeywords">Electron HTML CSS JS</p>
+            </div>
+
+            <div class="projectGallery">
+                <a class="projectGitLink" target="_blank"
+                    href="https://github.com/nathanlytang/cloudflare-ddns"><img class="gitLogo"
+                        src="images/GitHub-Mark-120px.svg"></a>
+                <p class="projectTitles">Cloudflare-DDNS</p>
+                <p class="projectDesc">A dynamic DNS client for Cloudflare A-Records using Cloudflare's RESTful
+                    APIv4.</p>
+                <p class="projectKeywords">Bash DDNS REST</p>
+            </div>
+
+            <div class="projectGallery">
+                <a class="projectGitLink" target="_blank"
+                    href="https://github.com/nathanlytang/InventoryManager"><img class="gitLogo"
+                        src="images/GitHub-Mark-120px.svg"></a>
+                <p class="projectTitles">Inventory Manager</p>
+                <p class="projectDesc">An inventory manager program built in Python. Uses the Tkinter GUI Framework
+                    and SQLite.</p>
+                <p class="projectKeywords">Python Tkinter SQL</p>
+            </div>
+
+            <div class="projectGallery">
+                <a class="projectGitLink" target="_blank"
+                    href="https://github.com/nathanlytang/SimpleImageAnnotationTool"><img class="gitLogo"
+                        src="images/GitHub-Mark-120px.svg"></a>
+                <p class="projectTitles">Image Annotation Tool</p>
+                <p class="projectDesc">This tool serves to annotate "interesting" and "non-interesting" sections on
+                    an image.</p>
+                <p class="projectKeywords">TS JS JSON</p>
+            </div>
+
+            <div class="projectGallery">
+                <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/AddressBook"><img
+                        class="gitLogo" src="images/GitHub-Mark-120px.svg"></a>
+                <p class="projectTitles">Address Book</p>
+                <p class="projectDesc">A desktop address book GUI in Python using the Tkinter Framework. Uses Google
+                    API's to update cross-device.</p>
+                <p class="projectKeywords">Python Tkinter API</p>
+            </div>
+
+            <div class="projectGallery">
+                <!-- <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/"><img
+                        class="gitLogo" src="images/GitHub-Mark-120px.svg"></a> -->
+                <p class="projectTitles">Polaris Server</p>
+                <p class="projectDesc">Exploring various technologies and self-hosted projects on my Dell PowerEdge
+                    R710 server.</p>
+                <p class="projectKeywords">Linux Docker</p>
+            </div>
+            
+            <div class="projectGallery">
+                <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/BrickBreakers"><img
+                        class="gitLogo" src="images/GitHub-Mark-120px.svg"></a>
+                <p class="projectTitles">Brick Breakers</p>
+                <p class="projectDesc">A Brick Breakers clone built with Python and Pygame to practice object oriented programming principles.</p>
+                <p class="projectKeywords">Python Pygame</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a target="_blank" href="https://github.com/nathanlytang/"><img class="footerLogo"
+                src="images/GitHub-Mark-120px.svg"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/nathan-tang/"><img class="footerLogo"
+                src="images/linkedin.svg"></a>
+        <a target="_blank" href="https://instagram.com/nathanlytang/"><img class="footerLogo"
+                src="images/instagram.svg"></a>
+        <a target="_blank" href="mailto:nathan.ly.tang@gmail.com"><img class="footerLogo" src="images/email.svg"></a>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
