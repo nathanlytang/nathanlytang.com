@@ -3,6 +3,7 @@ var txt = "Hi there! I'm";
 var speed = 50;
 const toggle = document.getElementById("toggle");
 
+// Type text
 function typeText() {
     if (i < txt.length) {
         document.getElementById("hiDesc").innerHTML += txt.charAt(i);
@@ -11,6 +12,7 @@ function typeText() {
     }
 }
 
+// Responsive menu
 function hamburgerMenu() {
     var x = document.getElementById("navbar");
     if (x.className == "navbar") {
@@ -22,6 +24,7 @@ function hamburgerMenu() {
     }
 }
 
+// PDF viewer
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
     var adobeDCView = new AdobeDC.View({ clientId: "a319c2c4b18a46beada55d907ca135d3", divId: "adobe-dc-view" });
     adobeDCView.previewFile({
@@ -30,6 +33,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
     }, { embedMode: "IN_LINE" });
 });
 
+// Theme switcher
 function setTheme(theme, persist) {
     const on = theme;
     const off = theme === 'light' ? 'dark' : 'light'
@@ -63,4 +67,20 @@ if (preferredTheme === 'light') {
     document.getElementById("toggle").checked = false;
 } else {
     document.getElementById("toggle").checked = true;
+}
+
+// Collapsibles
+var col = document.getElementsByClassName("projectCollapseButton");
+var i;
+
+for (i = 0; i < col.length; i++) {
+  col[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
 }
