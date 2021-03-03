@@ -12,7 +12,7 @@
 
 </head>
 
-<body onload="typeText()">
+<body>
 
     <a id="logo" href="index.html">N.</a>
     <div class="navbar" id="navbar">
@@ -33,7 +33,7 @@
     <div id="projects-page" class="projects">
         <h2>Projects.</h2>
         <p id="project-page-desc" class="projectDesc">Some more projects I have worked on!</p>
-        <div id="projectsTiles">
+        <!-- <div id="projectsTiles">
             <div class="projectGallery">
                 <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/wg-cli"><img
                         class="gitLogo" src="images/GitHub-Mark-120px.svg"></a>
@@ -103,8 +103,8 @@
             </div>
 
             <div class="projectGallery">
-                <!-- <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/"><img
-                        class="gitLogo" src="images/GitHub-Mark-120px.svg"></a> -->
+                <a class="projectGitLink" target="_blank" href="https://github.com/nathanlytang/"><img
+                        class="gitLogo" src="images/GitHub-Mark-120px.svg"></a>
                 <p class="projectTitles">Polaris Server</p>
                 <p class="projectDesc">Exploring various technologies and self-hosted projects on my Dell PowerEdge
                     R710 server.</p>
@@ -118,17 +118,136 @@
                 <p class="projectDesc">A Brick Breakers clone built with Python and Pygame to practice object oriented programming principles.</p>
                 <p class="projectKeywords">Python Pygame</p>
             </div>
+        </div> -->
+
+        <div id="projectCollapse">
+
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">wg-cli</button>
+                <div class="projectCollapseGallery">
+                    <p><a class="projectCollapseGitLink" target="_blank" href="https://github.com/nathanlytang/wg-cli"><img class="CollapseGitLogo" src="images/GitHub-Mark-120px.svg"></a></p>
+                    <p class="projectCollapseKeywords">C Bash</p>
+                    <p class="projectCollapseDesc">wg-cli is a CLI tool that manages Wireguard™ virtual private network (VPN) peers.</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>Adding and removing peer devices in Wireguard is time consuming, so I built this app to automate the process and speed up my workflow by 10x.</p>
+                    <p class="projectCollapseDesc"><b>Challenges: </b>Building the <code>remove-peer</code> function.  Due to the lack of unique peer identifiers in Wireguard, I essentially had to parse the configuration twice in order to remove a peer.</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>Because the C language does not have built-in garbage collection, I learned how to best manage resources so that there would not be any memory leaks.  This including using Valgrind, a memory debugging tool, to test my program.</p>
+                </div>
+            </div>
+
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">Steve</button>
+                <div class="projectCollapseGallery">
+                    <p><a class="projectCollapseGitLink" target="_blank" href="https://github.com/nathanlytang/Steve"><img class="CollapseGitLogo" src="images/GitHub-Mark-120px.svg"></a></p>
+                    <p class="projectCollapseKeywords">JS Node.js Docker</p>
+                    <p class="projectCollapseDesc">A Discord bot built for gaming communities. Provides an easily accessible and status panel for Minecraft servers.</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>As I host a Minecraft server for myself and my friends, I wanted an easy way to display the online status, version, and player count of the server.</p>
+                    <p class="projectCollapseDesc"><b>Challenges: </b>In order to keep my bot responsive and fast, I had to tweak my algorithms and methods a lot as I added features so that it would not ping servers unecessarily and eat up network bandwidth.</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>I learned how to gracefully handle errors such that the bot would remain user friendly, and would not crash upon encountering user error.</p>
+                </div>
+            </div>
+
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">Inhabit</button>
+                <div class="projectCollapseGallery">
+                    <p><a class="projectCollapseGitLink" target="_blank" href="https://github.com/nathanlytang/Inhabit"><img class="CollapseGitLogo" src="images/GitHub-Mark-120px.svg"></a></p>
+                    <p class="projectCollapseKeywords">HTML CSS JS Electron Node.js React-Native</p>
+                    <p class="projectCollapseDesc">Inhabit is a to-do desktop and mobile app built in Electron and React Native respectively.</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>To practice my Javascript and React skills.</p>
+                    <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
+                </div>
+            </div>
+
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">Cloudflare-DDNS</button>
+                <div class="projectCollapseGallery">
+                    <p><a class="projectCollapseGitLink" target="_blank" href="https://github.com/nathanlytang/Cloudflare-DDNS"><img class="CollapseGitLogo" src="images/GitHub-Mark-120px.svg"></a></p>
+                    <p class="projectCollapseKeywords">Bash Cron</p>
+                    <p class="projectCollapseDesc">A dynamic domain name system client for DNS records in Cloudflare.  Uses Cloudflare's RESTful APIv4.</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>Because my ISP does not hand out static IP addresses to residential clients, my IP address could be updated any time, cutting off access to my services that rely on a static domain.</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>I learned how to implement Cloudflare into my network infrastructure and use their DNS services to keep my domains up to date with the correct IP address.  I also learned how to automate my scripts with the Linux cron scheduler.</p>
+                </div>
+            </div>
+
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">Inventory Manager</button>
+                <div class="projectCollapseGallery">
+                    <p><a class="projectCollapseGitLink" target="_blank" href="https://github.com/nathanlytang/InventoryManager"><img class="CollapseGitLogo" src="images/GitHub-Mark-120px.svg"></a></p>
+                    <p class="projectCollapseKeywords">Python Tkinter SQLite</p>
+                    <p class="projectCollapseDesc">An inventory manager program built in Python. Uses the Tkinter GUI Framework and SQLite.</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
+                </div>
+            </div>
+
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">Image Annotation Tool</button>
+                <div class="projectCollapseGallery">
+                    <p><a class="projectCollapseGitLink" target="_blank" href="https://github.com/nathanlytang/SimpleImageAnnotationTool"><img class="CollapseGitLogo" src="images/GitHub-Mark-120px.svg"></a></p>
+                    <p class="projectCollapseKeywords">TS JS JSON</p>
+                    <p class="projectCollapseDesc">This tool serves to annotate "interesting" and "non-interesting" sections of an image and returns the data as coordinates in a JSON array.</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
+                </div>
+            </div>
+
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">Address Book</button>
+                <div class="projectCollapseGallery">
+                    <p><a class="projectCollapseGitLink" target="_blank" href="https://github.com/nathanlytang/AddressBook"><img class="CollapseGitLogo" src="images/GitHub-Mark-120px.svg"></a></p>
+                    <p class="projectCollapseKeywords">Python Tkinter Gspread</p>
+                    <p class="projectCollapseDesc">A desktop address book GUI in Python using the Tkinter Framework. Uses Google API's to update cross-device.</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
+                </div>
+            </div>
+            
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">Brick Breakers</button>
+                <div class="projectCollapseGallery">
+                    <p><a class="projectCollapseGitLink" target="_blank" href="https://github.com/nathanlytang/BrickBreakers"><img class="CollapseGitLogo" src="images/GitHub-Mark-120px.svg"></a></p>
+                    <p class="projectCollapseKeywords">Python Pygame</p>
+                    <p class="projectCollapseDesc">A Brick Breakers clone built with Python and Pygame to practice object oriented programming principles.</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
+                </div>
+            </div>
+            
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">Personal Portfolio Website</button>
+                <div class="projectCollapseGallery">
+                    <p><a class="projectCollapseExternLink" target="_blank" href="https://nathanlytang.com"><img class="CollapseGitLogo" src="images/external-link-1200px.png"></a></p>
+                    <p class="projectCollapseKeywords">HTML CSS JS</p>
+                    <p class="projectCollapseDesc">The website you are looking at right now!</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>To challenge and showcase my understanding of web technologies and responsive UI design without using third party frameworks like Bootstrap.</p>
+                    <p class="projectCollapseDesc"><b>Challenges: </b>CSS.  It's always CSS 😝.  While finicky sometimes, I learned a lot about the inner workings of CSS and how to implement it efficently and responsively.</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>How to deploy my website on my server securely using Nginx.</p>
+                </div>
+            </div>
+            
+            <div class="projectCollapseExpanded">
+                <button class="projectCollapseButton">Polaris Server</button>
+                <div class="projectCollapseGallery">
+                    <!-- <p><a class="projectCollapseGitLink" target="_blank" href=""><img class="CollapseGitLogo" src="images/GitHub-Mark-120px.svg"></a></p> -->
+                    <p class="projectCollapseKeywords">Linux Docker</p>
+                    <p class="projectCollapseDesc">Exploring various technologies and self-hosted projects on my Dell PowerEdge R710 server.</p>
+                    <p class="projectCollapseDesc"><b>Why: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
+                    <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="footer">
-        <a target="_blank" href="https://github.com/nathanlytang/"><img class="footerLogo"
-                src="images/GitHub-Mark-120px.svg"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/nathan-tang/"><img class="footerLogo"
-                src="images/linkedin.svg"></a>
-        <a target="_blank" href="https://instagram.com/nathanlytang/"><img class="footerLogo"
-                src="images/instagram.svg"></a>
-        <a target="_blank" href="mailto:nathan.ly.tang@gmail.com"><img class="footerLogo" src="images/email.svg"></a>
+        <a target="_blank" class="footerLogo" href="https://github.com/nathanlytang/"><img class="footerLogoImage" src="images/GitHub-Mark-120px.svg"></a>
+        <a target="_blank" class="footerLogo" href="https://www.linkedin.com/in/nathan-tang/"><img class="footerLogoImage" src="images/linkedin.svg"></a>
+        <a target="_blank" class="footerLogo" href="https://instagram.com/nathanlytang/"><img class="footerLogoImage" src="images/instagram.svg"></a>
+        <a target="_blank" class="footerLogo" href="mailto:nathan.ly.tang@gmail.com"><img class="footerLogoImage" src="images/email.svg"></a>
     </div>
 
     <script src="main.js"></script>
