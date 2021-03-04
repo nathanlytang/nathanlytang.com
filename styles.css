@@ -24,7 +24,7 @@
         --foreground-color: #2F3136;
         --title-color: #e3e3e3;
         --caption-color: #e3e3e3;
-        --description-color: #e3e3e3;
+        --description-color: #d4d4d4;
         --shade-color: #323439;
         --boxshadow: #242529;
         --accent-color: #e3e3e3;
@@ -513,13 +513,19 @@ a {
     margin: auto auto;
     word-spacing: 0.5em;
     color: var(--description-color);
+    margin-top: 1vh;
+}
+
+.projectCollpaseDescSec {
+    float: left;
+    display: inline;
+    width: 100%;
 }
 
 .projectCollapseDesc {
     font-size: 1rem;
     color: var(--description-color);
     text-align: left;
-    margin-right: 2vw;
 }
 
 .projectCollapseGitLink {
@@ -546,6 +552,12 @@ a {
     width: 100%;
     float: right;
     filter: var(--filter-inverted);
+}
+
+.projectImage {
+    display: block;
+    margin: 2vh auto;
+    box-shadow: 1px 1px 10px 1px var(--boxshadow);
 }
 
 @media only screen and (max-width: 900px) {
@@ -686,6 +698,12 @@ a {
         margin: 0 auto;
         box-shadow: 1px 1px 10px 1px #dadada;
     }
+}
+
+#classicPDF {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* About Page */
