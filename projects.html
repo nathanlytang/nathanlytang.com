@@ -14,7 +14,7 @@
 
 <body>
 
-    <a id="logo" href="index.html">N.</a>
+    <a id="logo" title="Home" href="index.html">N.</a>
     <div class="navbar" id="navbar">
         <div id='navFloat'>
             <div id="navlinktop">
@@ -22,7 +22,7 @@
                 <a href='projects.html' class="navlink">Projects</a>
                 <a href='index.html#contactIndex' class="navlink">Contact</a>
                 <a href='resume.html' class="navlink">Resume</a>
-                <label class="switch navlink"><input id="toggle" type="checkbox"><span
+                <label class="switch navlink" title="Toggle dark mode"><input id="toggle" type="checkbox"><span
                         class="slider round"></span></label>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
@@ -32,7 +32,7 @@
 
     <div id="projects-page" class="projects">
         <h2>Projects.</h2>
-        
+
         <p id="project-page-desc" class="projectDesc">Some more projects I have worked on!</p>
 
         <div id="projectCollapse">
@@ -57,6 +57,7 @@
                             be any memory leaks. This including using Valgrind, a memory debugging tool, to test my
                             program.</p>
                     </div>
+                    <img class="projectImage" style="border-radius: 5px; width: 100%" src="images/preview_wg-cli.png">
                 </div>
             </div>
 
@@ -92,10 +93,13 @@
                                 src="images/GitHub-Mark-120px.svg"></a></p>
                     <p class="projectCollapseKeywords">{ HTML CSS JS Electron Node.js React-Native }</p>
                     <div class="projectCollpaseDescSec">
-                        <p class="projectCollapseDesc">Inhabit is a to-do desktop (Windows) and mobile (Android/iOS) app built in Electron and
-                            React Native respectively.  It stores data in JSON.</p>
-                        <p class="projectCollapseDesc"><b>Why: </b>To practice my Javascript and React skills while implementing a modern looking application.</p>
-                        <p class="projectCollapseDesc"><b>What I learned: </b>How to build applications in Electron and React Native.</p>
+                        <p class="projectCollapseDesc">Inhabit is a to-do desktop (Windows) and mobile (Android/iOS) app
+                            built in Electron and
+                            React Native respectively. It stores data in JSON.</p>
+                        <p class="projectCollapseDesc"><b>Why: </b>To practice my Javascript and React skills while
+                            implementing a modern looking application.</p>
+                        <p class="projectCollapseDesc"><b>What I learned: </b>How to build applications in Electron and
+                            React Native.</p>
                     </div>
                     <img class="projectImage" style="border-radius: 8px" src="images/preview_inhabit.png">
                 </div>
@@ -132,10 +136,16 @@
                     <div class="projectCollpaseDescSec">
                         <p class="projectCollapseDesc">An inventory manager program built in Python. Uses the Tkinter
                             GUI Framework and SQLite.</p>
-                        <p class="projectCollapseDesc"><b>Why: </b>🚧</p>
-                        <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
-                        <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
+                        <p class="projectCollapseDesc"><b>Why: </b>I wanted to build a functional program that fulfilled
+                            my needs outside of just a side project.</p>
+                        <p class="projectCollapseDesc"><b>Challenges: </b>I had issues with the SQL processor writing to
+                            the wrong database even after closing the connection. This was solved by disposing and
+                            recreating the engine when a new database is opened.</p>
+                        <p class="projectCollapseDesc"><b>What I learned: </b>I learned how to integrate SQLite with
+                            Python and build programs that could take advantage of databases.</p>
                     </div>
+                    <img class="projectImage" style="border-radius: 5px; width: 100%"
+                        src="images/preview_inventoryManager.png">
                 </div>
             </div>
 
@@ -149,9 +159,7 @@
                     <div class="projectCollpaseDescSec">
                         <p class="projectCollapseDesc">This tool serves to annotate "interesting" and "non-interesting"
                             sections of an image and returns the data as coordinates in a JSON array.</p>
-                        <p class="projectCollapseDesc"><b>Why: </b>🚧</p>
-                        <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
-                        <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
+                        <p class="projectCollapseDesc"><b>What I learned: </b>Strongly typed Javascript using Typescript!  I also learned how to work with HTML canvases</p>
                     </div>
                 </div>
             </div>
@@ -170,6 +178,8 @@
                         <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
                         <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
                     </div>
+                    <img class="projectImage" style="border-radius: 5px; width: 100%"
+                        src="images/preview_addressBook.png">
                 </div>
             </div>
 
@@ -182,11 +192,13 @@
                     <p class="projectCollapseKeywords">{ Python Pygame }</p>
                     <div class="projectCollpaseDescSec">
                         <p class="projectCollapseDesc">A Brick Breakers clone built with Python and Pygame to practice
-                            object oriented programming principles.</p>
-                        <p class="projectCollapseDesc"><b>Why: </b>🚧</p>
+                            object oriented programming principles. Features lives, levels, and scores.</p>
+                        <p class="projectCollapseDesc"><b>Why: </b>To practice my object oriented programming skills.</p>
                         <p class="projectCollapseDesc"><b>Challenges: </b>🚧</p>
                         <p class="projectCollapseDesc"><b>What I learned: </b>🚧</p>
                     </div>
+                    <img class="projectImage" style="border-radius: 5px; width: 100%"
+                        src="images/preview_brickBreaker.png">
                 </div>
             </div>
 
@@ -228,14 +240,14 @@
     </div>
 
     <div id="footer">
-        <a target="_blank" class="footerLogo" href="https://github.com/nathanlytang/"><img class="footerLogoImage"
-                src="images/GitHub-Mark-120px.svg"></a>
-        <a target="_blank" class="footerLogo" href="https://www.linkedin.com/in/nathan-tang/"><img
+        <a target="_blank" class="footerLogo" href="https://github.com/nathanlytang/" title="GitHub"><img
+                class="footerLogoImage" src="images/GitHub-Mark-120px.svg"></a>
+        <a target="_blank" class="footerLogo" href="https://www.linkedin.com/in/nathan-tang/" title="LinkedIn"><img
                 class="footerLogoImage" src="images/linkedin.svg"></a>
-        <a target="_blank" class="footerLogo" href="https://instagram.com/nathanlytang/"><img class="footerLogoImage"
-                src="images/instagram.svg"></a>
-        <a target="_blank" class="footerLogo" href="mailto:nathan.ly.tang@gmail.com"><img class="footerLogoImage"
-                src="images/email.svg"></a>
+        <a target="_blank" class="footerLogo" href="https://instagram.com/nathanlytang/" title="Instagram"><img
+                class="footerLogoImage" src="images/Instagram.svg"></a>
+        <a target="_blank" class="footerLogo" href="mailto:nathan.ly.tang@gmail.com" title="Email"><img
+                class="footerLogoImage" src="images/email.svg"></a>
     </div>
 
     <script src="main.js"></script>
