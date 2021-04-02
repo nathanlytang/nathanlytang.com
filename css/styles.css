@@ -546,6 +546,7 @@ a {
     float: right;
     width: 1.5rem;
     opacity: 0.9;
+    margin-left: 10px;
 }
 
 .CollapseExternLogo {
