@@ -17,10 +17,10 @@ function hamburgerMenu() {
     var x = document.getElementById("navbar");
     if (x.className == "navbar") {
         x.className += " responsive";
-        document.getElementById("hamburgerMenuImage").src = "images/exit.svg"
+        document.getElementById("hamburgerMenuImage").src = "../assets/images/exit.svg"
     } else {
         x.className = "navbar";
-        document.getElementById("hamburgerMenuImage").src = "images/hamburger.svg"
+        document.getElementById("hamburgerMenuImage").src = "../assets/images/hamburger.svg"
     }
 }
 
@@ -28,7 +28,7 @@ function hamburgerMenu() {
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
     var adobeDCView = new AdobeDC.View({ clientId: "a319c2c4b18a46beada55d907ca135d3", divId: "adobe-dc-view" });
     adobeDCView.previewFile({
-        content: { location: { url: "Nathan Tang - Resume.pdf" } },
+        content: { location: { url: "../assets/Nathan Tang - Resume.pdf" } },
         metaData: { fileName: "Nathan Tang - Resume.pdf" }
     }, { embedMode: "IN_LINE" });
 });
