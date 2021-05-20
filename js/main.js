@@ -74,13 +74,37 @@ var col = document.getElementsByClassName("projectCollapseButton");
 var i;
 
 for (i = 0; i < col.length; i++) {
-  col[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
+    col[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+
+function expandAll(element) {
+    var col = document.getElementsByClassName("projectCollapseButton");
+    var i;
+
+    if (element.value === "collapsed") {
+        element.value = "expanded";
+        element.innerHTML = "Collapse All ▲";
+        for (i = 0; i < col.length; i++) {
+            col[i].classList.add("active");
+            var content = col[i].nextElementSibling;
+            content.style.maxHeight = content.scrollHeight + "px";
+        };
+
+    } else if (element.value === "expanded") {
+        element.value = "collapsed";
+        element.innerHTML = "Expand All ▼";
+        for (i = 0; i < col.length; i++) {
+            col[i].classList.remove("active");
+            var content = col[i].nextElementSibling;
+            content.style.maxHeight = null;
+        };
+    }
 }
