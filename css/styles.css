@@ -677,28 +677,6 @@ a {
 
 /* Resume Page */
 
-@media only screen and (min-width: 600px) {
-    /* #resume {
-        width: 80%;
-        height: 120vh;
-        margin: 0 auto;
-        margin-bottom: 10rem;
-    } */
-
-    /* iframe {
-        display: block;
-        width: 56%;
-        height: 96%;
-        margin: 5rem auto;
-    } */
-    
-    #adobe-dc-view {
-        width: 30%;
-        margin: 0 auto;
-        box-shadow: 1px 1px 10px 1px var(--boxshadow);
-    }
-}
-
 @media only screen and (max-width: 600px) {
     /* #resume {
         width: 90%;
@@ -718,6 +696,44 @@ a {
         width: 90%;
         margin: 0 auto;
         box-shadow: 1px 1px 10px 1px #dadada;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+    #adobe-dc-view {
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 10px 1px var(--boxshadow);
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 2000px) {
+    /* #resume {
+        width: 80%;
+        height: 120vh;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+    } */
+
+    /* iframe {
+        display: block;
+        width: 56%;
+        height: 96%;
+        margin: 5rem auto;
+    } */
+    
+    #adobe-dc-view {
+        width: 35%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 10px 1px var(--boxshadow);
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    #adobe-dc-view {
+        width: 40%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 10px 1px var(--boxshadow);
     }
 }
 
