@@ -12,57 +12,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="title" content="Nathan Tang's Resume">
-    <meta name="description" content="Hi there! I'm Nathan, a computing science undergraduate and software developer in Edmonton, CA.">
+    <meta name="description"
+        content="Hi there! I'm Nathan, a computing science undergraduate and software developer in Edmonton, CA.">
 
 </head>
 
 <body>
 
-    <a id="logo" title="Home" href="index.html">N.</a>
-    <div class="navbar" id="navbar">
-        <div id='navFloat'>
-            <div id="navlinktop">
-                <a href='about.html' class="navlink">About</a>
-                <a href='projects.html' class="navlink">Projects</a>
-                <a href='index.html#contactIndex' class="navlink">Contact</a>
-                <a href='resume.html' class="navlink">Resume</a>
-                <label class="switch navlink" title="Toggle dark mode"><input id="toggle" type="checkbox"><span
-                        class="slider round"></span></label>
+    <header>
+        <a class="skipNavLink" href="#mainContent">Skip to main content</a>
+        <a id="logo" title="Home" href="index.html">N.</a>
+        <div class="navbar" id="navbar">
+            <div id='navFloat'>
+                <div id="navlinktop">
+                    <a href='about.html' class="navlink">About</a>
+                    <a href='projects.html' class="navlink">Projects</a>
+                    <a href='index.html#contactIndex' class="navlink">Contact</a>
+                    <a href='resume.html' class="navlink">Resume</a>
+                    <label class="switch navlink" title="Toggle dark mode"><input id="toggle" type="checkbox"><span
+                            class="slider round"></span></label>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <img id="hamburgerMenuImage" src="assets/images/hamburger.svg" alt="Menu"></a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-                <img id="hamburgerMenuImage" src="assets/images/hamburger.svg" alt="Menu"></a>
         </div>
-    </div>
+    </header>
 
-    <div id="resume">
+    <div id="mainContent">
 
-        <h2>Resume.</h2>
+        <div id="resume">
 
-        <!-- <iframe src="Nathan Tang - Resume.pdf#toolbar=0"></iframe> -->
-        <div id="classicPDF">
-            <p>The <a href="assets/Nathan Tang - Resume.pdf">classic PDF version is available</a> if preferred.</p>
+            <h2>Resume.</h2>
+
+            <!-- <iframe src="Nathan Tang - Resume.pdf#toolbar=0"></iframe> -->
+            <div id="classicPDF">
+                <p>The <a href="assets/Nathan Tang - Resume.pdf">classic PDF version is available</a> if preferred.</p>
+            </div>
+            <div id="adobe-dc-view"></div>
+            <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
         </div>
-        <div id="adobe-dc-view"></div>
-        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 
-    </div>
-
-    <div class="contact" id="contactResume">
-        <h2>Contact.</h2>
-        <p class="contactDesc">I'm always looking for new opportunities! If you're seeking a diligent, inquisitive
-            student intern for Spring/Summer 2022, I would love to get in touch.</p>
-        <a class="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
+        <div class="contact" id="contactResume">
+            <h2>Contact.</h2>
+            <p class="contactDesc">I'm always looking for new opportunities! If you're seeking a diligent, inquisitive
+                student intern for Spring/Summer 2022, I would love to get in touch.</p>
+            <a class="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
+        </div>
+        
     </div>
 
     <div id="footer">
-        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://github.com/nathanlytang/" title="GitHub"><img
-                class="footerLogoImage" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
-        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://www.linkedin.com/in/nathan-tang/" title="LinkedIn"><img
-                class="footerLogoImage" src="assets/images/linkedin.svg" alt="Linkedin"></a>
-        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://instagram.com/nathanlytang/" title="Instagram"><img
-                class="footerLogoImage" src="assets/images/instagram.svg" alt="Instagram"></a>
-        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="mailto:nathan.ly.tang@gmail.com" title="Email"><img
-                class="footerLogoImage" src="assets/images/email.svg" alt="Email"></a>
+        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://github.com/nathanlytang/"
+            title="GitHub"><img class="footerLogoImage" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
+        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://www.linkedin.com/in/nathan-tang/"
+            title="LinkedIn"><img class="footerLogoImage" src="assets/images/linkedin.svg" alt="Linkedin"></a>
+        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://instagram.com/nathanlytang/"
+            title="Instagram"><img class="footerLogoImage" src="assets/images/instagram.svg" alt="Instagram"></a>
+        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="mailto:nathan.ly.tang@gmail.com"
+            title="Email"><img class="footerLogoImage" src="assets/images/email.svg" alt="Email"></a>
     </div>
 
     <script src="js/main.js"></script>

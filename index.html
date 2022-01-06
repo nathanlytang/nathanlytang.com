@@ -12,7 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="title" content="Nathan Tang">
-    <meta name="description" content="Hi there! I'm Nathan, a computing science undergraduate and software developer in Edmonton, CA.">
+    <meta name="description"
+        content="Hi there! I'm Nathan, a computing science undergraduate and software developer in Edmonton, CA.">
     <meta name="keywords"
         content="nathanlytang, nathan tang, software developer, programmer, student, university, alberta, edmonton, computing, science, computer, engineer">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -30,129 +31,149 @@
 
 <body onload="typeText()">
 
-    <a id="logo" title="Home" href="index.html">N.</a>
-    <div class="navbar" id="navbar">
-        <div id='navFloat'>
-            <div id="navlinktop">
-                <a href='about.html' class="navlink">About</a>
-                <a href='projects.html' class="navlink">Projects</a>
-                <a href='#contactIndex' class="navlink">Contact</a>
-                <a href='resume.html' class="navlink">Resume</a>
-                <label class="switch navlink" title="Toggle dark mode"><input id="toggle" type="checkbox"><span
-                        class="slider round"></span></label>
+    <header>
+        <a class="skipNavLink" href="#mainContent">Skip to main content</a>
+        <a id="logo" title="Home" href="index.html">N.</a>
+        <div class="navbar" id="navbar">
+            <div id='navFloat'>
+                <div id="navlinktop">
+                    <a href='about.html' class="navlink">About</a>
+                    <a href='projects.html' class="navlink">Projects</a>
+                    <a href='#contactIndex' class="navlink">Contact</a>
+                    <a href='resume.html' class="navlink">Resume</a>
+                    <label class="switch navlink" title="Toggle dark mode"><input id="toggle" type="checkbox"><span
+                            class="slider round"></span></label>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <img id="hamburgerMenuImage" src="assets/images/hamburger.svg" alt="Menu"></a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-                <img id="hamburgerMenuImage" src="assets/images/hamburger.svg" alt="Menu"></a>
         </div>
-    </div>
+    </header>
 
     <div id="belowNav">
-        <div id="backgroundWrapper">
-            <div id="description">
-                <p id="hiDesc"></p>
-                <p id="name">Nathan.</p>
-                <p id="nameDesc">I love building things.</p>
-                <p id="descriptionParagraph">From web-based products, mobile or desktop applications, or anything in
-                    between, my interest is piqued. I am currently a computing science undergraduate <b><a
-                            id="school-link" href="https://www.ualberta.ca/" target="_blank" rel="noopener noreferrer">@<u>UAlberta</u></a></b> in
-                    Edmonton, CA, and I'm always searching for new opportunities to grow, practice, and learn.</p>
-                <a class="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
+        <div id="mainContent">
+            <div id="backgroundWrapper">
+                <div id="description">
+                    <p id="hiDesc"></p>
+                    <p id="name">Nathan.</p>
+                    <p id="nameDesc">I love building things.</p>
+                    <p id="descriptionParagraph">From web-based products, mobile or desktop applications, or anything in
+                        between, my interest is piqued. I am currently a computing science undergraduate <b><a
+                                id="school-link" href="https://www.ualberta.ca/" target="_blank"
+                                rel="noopener noreferrer">@<u>UAlberta</u></a></b> in
+                        Edmonton, CA, and I'm always searching for new opportunities to grow, practice, and learn.</p>
+                    <a class="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
 
+                </div>
+                <div id="scrollSkew">
+                    <div id="scrollDown" onclick="window.location.href='#projects'"></div>
+                </div>
             </div>
-            <div id="scrollSkew">
-                <div id="scrollDown" onclick="window.location.href='#projects'"></div>
-            </div>
-        </div>
 
-        <div id="projects" class="projects">
-            <h2>Projects.</h2>
-            <div id="projectsTiles">
-                <div class="projectGallery">
-                    <a class="projectGitLink" target="_blank" rel="noopener noreferrer" href="https://github.com/nathanlytang/inhabit"><img
-                            class="gitLogo" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
-                    <p class="projectTitles">Inhabit</p>
-                    <p class="projectDesc">Inhabit is a simple to-do list desktop app built in the open-source Electron
-                        and NodeJS environment.</p>
-                    <p class="projectKeywords">Electron HTML CSS JS</p>
-                </div>
+            <div id="projects" class="projects">
+                <h2>Projects.</h2>
+                <div id="projectsTiles">
+                    <div class="projectGallery">
+                        <a class="projectGitLink" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/nathanlytang/inhabit"><img class="gitLogo"
+                                src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
+                        <p class="projectTitles">Inhabit</p>
+                        <p class="projectDesc">Inhabit is a simple to-do list desktop app built in the open-source
+                            Electron
+                            and NodeJS environment.</p>
+                        <p class="projectKeywords">Electron HTML CSS JS</p>
+                    </div>
 
-                <div class="projectGallery">
-                    <a class="projectGitLink" target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/nathanlytang/InventoryManager"><img class="gitLogo"
-                            src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
-                    <p class="projectTitles">Inventory Manager</p>
-                    <p class="projectDesc">An inventory manager program built in Python. Uses the Tkinter GUI Framework
-                        and SQLite.</p>
-                    <p class="projectKeywords">Python Tkinter SQL</p>
-                </div>
+                    <div class="projectGallery">
+                        <a class="projectGitLink" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/nathanlytang/InventoryManager"><img class="gitLogo"
+                                src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
+                        <p class="projectTitles">Inventory Manager</p>
+                        <p class="projectDesc">An inventory manager program built in Python. Uses the Tkinter GUI
+                            Framework
+                            and SQLite.</p>
+                        <p class="projectKeywords">Python Tkinter SQL</p>
+                    </div>
 
-                <div class="projectGallery">
-                    <a class="projectLink" target="_blank" rel="noopener noreferrer" href="https://top.gg/bot/773117222380896276"><img
-                            class="extern" src="assets/images/external-link-48px.png" alt="Top.gg Link"></a>
-                    <a class="projectGitLink" target="_blank" rel="noopener noreferrer" href="https://github.com/nathanlytang/Steve"><img
-                            class="gitLogo" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
-                    <p class="projectTitles">Steve</p>
-                    <p class="projectDesc">A Discord bot built for gaming communities. Provides an easily
-                        accessible and status panel for Minecraft servers.</p>
-                    <p class="projectKeywords">Node.js Docker MySQL</p>
-                </div>
+                    <div class="projectGallery">
+                        <a class="projectLink" target="_blank" rel="noopener noreferrer"
+                            href="https://top.gg/bot/773117222380896276"><img class="extern"
+                                src="assets/images/external-link-48px.png" alt="Top.gg Link"></a>
+                        <a class="projectGitLink" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/nathanlytang/Steve"><img class="gitLogo"
+                                src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
+                        <p class="projectTitles">Steve</p>
+                        <p class="projectDesc">A Discord bot built for gaming communities. Provides an easily
+                            accessible and status panel for Minecraft servers.</p>
+                        <p class="projectKeywords">Node.js Docker MySQL</p>
+                    </div>
 
-                <div class="projectGallery">
-                    <a class="projectGitLink" target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/nathanlytang/cloudflare-ddns"><img class="gitLogo"
-                            src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
-                    <p class="projectTitles">Cloudflare-DDNS</p>
-                    <p class="projectDesc">A dynamic DNS client for Cloudflare A-Records using Cloudflare's RESTful
-                        APIv4.</p>
-                    <p class="projectKeywords">Bash DDNS REST</p>
-                </div>
+                    <div class="projectGallery">
+                        <a class="projectGitLink" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/nathanlytang/cloudflare-ddns"><img class="gitLogo"
+                                src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
+                        <p class="projectTitles">Cloudflare-DDNS</p>
+                        <p class="projectDesc">A dynamic DNS client for Cloudflare A-Records using Cloudflare's RESTful
+                            APIv4.</p>
+                        <p class="projectKeywords">Bash DDNS REST</p>
+                    </div>
 
-                <div class="projectGallery">
-                    <a class="projectGitLink" target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/nathanlytang/SimpleImageAnnotationTool"><img class="gitLogo"
-                            src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
-                    <p class="projectTitles">Image Annotation Tool</p>
-                    <p class="projectDesc">This tool serves to annotate "interesting" and "non-interesting" sections on
-                        an image.</p>
-                    <p class="projectKeywords">TS JS JSON</p>
-                </div>
+                    <div class="projectGallery">
+                        <a class="projectGitLink" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/nathanlytang/SimpleImageAnnotationTool"><img class="gitLogo"
+                                src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
+                        <p class="projectTitles">Image Annotation Tool</p>
+                        <p class="projectDesc">This tool serves to annotate "interesting" and "non-interesting" sections
+                            on
+                            an image.</p>
+                        <p class="projectKeywords">TS JS JSON</p>
+                    </div>
 
-                <div class="projectGallery">
-                    <a class="projectLink" target="_blank" rel="noopener noreferrer" href="https://mcstatus.ev8e2.xyz/"><img
-                            class="extern" src="assets/images/external-link-48px.png" alt="MCSTATUS Site"></a>
-                    <a class="projectGitLink" target="_blank" rel="noopener noreferrer" href="https://github.com/nathanlytang/mcstatus"><img
-                            class="gitLogo" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
-                    <p class="projectTitles">mcstatus</p>
-                    <p class="projectDesc">An extension of my Discord bot <a target="_blank" rel="noopener noreferrer" href="https://github.com/nathanlytang/steve">Steve</a>. A status webpage for Minecraft servers.</p>
-                    <p class="projectKeywords">TS React Express</p>
-                </div>
+                    <div class="projectGallery">
+                        <a class="projectLink" target="_blank" rel="noopener noreferrer"
+                            href="https://mcstatus.ev8e2.xyz/"><img class="extern"
+                                src="assets/images/external-link-48px.png" alt="MCSTATUS Site"></a>
+                        <a class="projectGitLink" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/nathanlytang/mcstatus"><img class="gitLogo"
+                                src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
+                        <p class="projectTitles">mcstatus</p>
+                        <p class="projectDesc">An extension of my Discord bot <a target="_blank"
+                                rel="noopener noreferrer" href="https://github.com/nathanlytang/steve">Steve</a>. A
+                            status webpage for Minecraft
+                            servers.</p>
+                        <p class="projectKeywords">TS React Express</p>
+                    </div>
 
-                <!-- <div class="projectGallery">
+                    <!-- <div class="projectGallery">
                     <p class="projectTitles">Polaris Server</p>
                     <p class="projectDesc">Exploring various technologies and self-hosted projects on my Dell PowerEdge
                         R710 server.</p>
                     <p class="projectKeywords">Linux Docker</p>
                 </div> -->
+                </div>
+                <div id="more-button"><a href="projects.html">See More Projects</a></div>
             </div>
-            <div id="more-button"><a href="projects.html">See More Projects</a></div>
-        </div>
 
-        <div class="contact" id="contactIndex">
-            <h2>Contact.</h2>
-            <p class="contactDesc">I'm always looking for new opportunities! If you're seeking a diligent, inquisitive
-                student intern for Spring/Summer 2022, I would love to get in touch.</p>
-            <a class="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
-        </div>
+            <div class="contact" id="contactIndex">
+                <h2>Contact.</h2>
+                <p class="contactDesc">I'm always looking for new opportunities! If you're seeking a diligent,
+                    inquisitive
+                    student intern for Spring/Summer 2022, I would love to get in touch.</p>
+                <a class="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
+            </div>
 
+        </div>
+        
         <div id="footer">
-            <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://github.com/nathanlytang/" title="GitHub"><img
-                    class="footerLogoImage" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
-            <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://www.linkedin.com/in/nathan-tang/" title="LinkedIn"><img
-                    class="footerLogoImage" src="assets/images/linkedin.svg" alt="Linkedin"></a>
-            <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://instagram.com/nathanlytang/" title="Instagram"><img
-                    class="footerLogoImage" src="assets/images/instagram.svg" alt="Instagram"></a>
-            <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="mailto:nathan.ly.tang@gmail.com" title="Email"><img
-                    class="footerLogoImage" src="assets/images/email.svg" alt="Email"></a>
+            <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://github.com/nathanlytang/"
+                title="GitHub"><img class="footerLogoImage" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
+            <a target="_blank" rel="noopener noreferrer" class="footerLogo"
+                href="https://www.linkedin.com/in/nathan-tang/" title="LinkedIn"><img class="footerLogoImage"
+                    src="assets/images/linkedin.svg" alt="Linkedin"></a>
+            <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://instagram.com/nathanlytang/"
+                title="Instagram"><img class="footerLogoImage" src="assets/images/instagram.svg" alt="Instagram"></a>
+            <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="mailto:nathan.ly.tang@gmail.com"
+                title="Email"><img class="footerLogoImage" src="assets/images/email.svg" alt="Email"></a>
         </div>
 
     </div>

@@ -12,67 +12,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="title" content="About Nathan Tang">
-    <meta name="description" content="Hi there! I'm Nathan, a computing science undergraduate and software developer in Edmonton, CA.">
+    <meta name="description"
+        content="Hi there! I'm Nathan, a computing science undergraduate and software developer in Edmonton, CA.">
 
 </head>
 
 <body>
 
-    <a id="logo" title="Home" href="index.html">N.</a>
-    <div class="navbar" id="navbar">
-        <div id='navFloat'>
-            <div id="navlinktop">
-                <a href='about.html' class="navlink">About</a>
-                <a href='projects.html' class="navlink">Projects</a>
-                <a href='index.html#contactIndex' class="navlink">Contact</a>
-                <a href='resume.html' class="navlink">Resume</a>
-                <label class="switch navlink" title="Toggle dark mode"><input id="toggle" type="checkbox"><span
-                        class="slider round"></span></label>
+    <header>
+        <a class="skipNavLink" href="#mainContent">Skip to main content</a>
+        <a id="logo" title="Home" href="index.html">N.</a>
+        <div class="navbar" id="navbar">
+            <div id='navFloat'>
+                <div id="navlinktop">
+                    <a href='about.html' class="navlink">About</a>
+                    <a href='projects.html' class="navlink">Projects</a>
+                    <a href='index.html#contactIndex' class="navlink">Contact</a>
+                    <a href='resume.html' class="navlink">Resume</a>
+                    <label class="switch navlink" title="Toggle dark mode"><input id="toggle" type="checkbox"><span
+                            class="slider round"></span></label>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <img id="hamburgerMenuImage" src="assets/images/hamburger.svg" alt="Menu"></a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-                <img id="hamburgerMenuImage" src="assets/images/hamburger.svg" alt="Menu"></a>
         </div>
-    </div>
+    </header>
 
-    <div id="about">
-        <img id="profile-image" src="assets/images/profileRes.jpg" alt="Profile picture">
-        <div id="aboutText">
-            <p></p>
-            <p id="aboutDesc">I'm Nathan, a third year undergraduate student at the University of Alberta, Canada. I've
-                always had an eye towards building things that simplify the lives of those that use them, and software
-                is no exception. <br><br> Recently, I've taken the deep dive into self-hosting, building up a small
-                server infrastructure on my internal network. This has lead me to learn about all different aspects of
-                software and hardware, combining my knowledge as a software dev and sysadmin. Through this I have
-                learned so much, setting up networks with VPNs, virtual LANs, and firewalls; deploying and modifying
-                open source software to serve my network; building programs to automate my workflows; and building
-                software to host on my own network. I now host some of my own applications, most notably my Discord bot
-                <a href="https://top.gg/bot/773117222380896276" target="_blank" rel="noopener noreferrer">Steve</a>, deployed to many Discord
-                guilds and serving hundreds of people daily. <br><br> My projects are viewable on my <a
-                    href="https://github.com/nathanlytang" target="_blank" rel="noopener noreferrer">Github page</a> and my  <a
-                    href="assets/Nathan Tang - Resume.pdf" target="_blank" rel="noopener noreferrer">resume is viewable here</a>. I'm currently seeking
-                internships and other opportunities for Spring/Summer 2022. I'd love to get in touch!
-            </p>
+    <div id="mainContent">
+
+        <div id="about">
+            <img id="profile-image" src="assets/images/profileRes.jpg" alt="Profile picture">
+            <div id="aboutText">
+                <p></p>
+                <p id="aboutDesc">I'm Nathan, a third year undergraduate student at the University of Alberta, Canada.
+                    I've
+                    always had an eye towards building things that simplify the lives of those that use them, and
+                    software
+                    is no exception. <br><br> Recently, I've taken the deep dive into self-hosting, building up a small
+                    server infrastructure on my internal network. This has lead me to learn about all different aspects
+                    of
+                    software and hardware, combining my knowledge as a software dev and sysadmin. Through this I have
+                    learned so much, setting up networks with VPNs, virtual LANs, and firewalls; deploying and modifying
+                    open source software to serve my network; building programs to automate my workflows; and building
+                    software to host on my own network. I now host some of my own applications, most notably my Discord
+                    bot
+                    <a href="https://top.gg/bot/773117222380896276" target="_blank" rel="noopener noreferrer">Steve</a>,
+                    deployed to many Discord
+                    guilds and serving hundreds of people daily. <br><br> My projects are viewable on my <a
+                        href="https://github.com/nathanlytang" target="_blank" rel="noopener noreferrer">Github page</a>
+                    and
+                    my <a href="assets/Nathan Tang - Resume.pdf" target="_blank" rel="noopener noreferrer">resume is
+                        viewable here</a>. I'm currently seeking
+                    internships and other opportunities for Spring/Summer 2022. I'd love to get in touch!
+                </p>
+            </div>
         </div>
+
+
+        <div class="contact" id="contactResume">
+            <h2>Contact.</h2>
+            <p class="contactDesc">I'm always looking for new opportunities! If you're seeking a diligent, inquisitive
+                student intern for Spring/Summer 2022, I would love to get in touch.</p>
+            <a class="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
+        </div>
+
     </div>
-
-
-    <div class="contact" id="contactResume">
-        <h2>Contact.</h2>
-        <p class="contactDesc">I'm always looking for new opportunities! If you're seeking a diligent, inquisitive
-            student intern for Spring/Summer 2022, I would love to get in touch.</p>
-        <a class="letsTalkButton" href="mailto:nathan.ly.tang@gmail.com">Let's talk!</a>
-    </div>
-
+    
     <div id="footer">
-        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://github.com/nathanlytang/" title="GitHub"><img
-                class="footerLogoImage" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
-        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://www.linkedin.com/in/nathan-tang/" title="LinkedIn"><img
-                class="footerLogoImage" src="assets/images/linkedin.svg" alt="Linkedin"></a>
-        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://instagram.com/nathanlytang/" title="Instagram"><img
-                class="footerLogoImage" src="assets/images/instagram.svg" alt="Instagram"></a>
-        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="mailto:nathan.ly.tang@gmail.com" title="Email"><img
-                class="footerLogoImage" src="assets/images/email.svg" alt="Email"></a>
+        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://github.com/nathanlytang/"
+            title="GitHub"><img class="footerLogoImage" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
+        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://www.linkedin.com/in/nathan-tang/"
+            title="LinkedIn"><img class="footerLogoImage" src="assets/images/linkedin.svg" alt="Linkedin"></a>
+        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="https://instagram.com/nathanlytang/"
+            title="Instagram"><img class="footerLogoImage" src="assets/images/instagram.svg" alt="Instagram"></a>
+        <a target="_blank" rel="noopener noreferrer" class="footerLogo" href="mailto:nathan.ly.tang@gmail.com"
+            title="Email"><img class="footerLogoImage" src="assets/images/email.svg" alt="Email"></a>
     </div>
+
 
     <script src="js/main.js"></script>
 </body>
