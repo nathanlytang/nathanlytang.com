@@ -31,7 +31,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         content: { location: { url: "../assets/Nathan Tang - Resume.pdf" } },
         metaData: { fileName: "Nathan Tang - Resume.pdf" }
     }, { embedMode: "IN_LINE" });
-});
+}, {passive: true});
 
 // Theme switcher
 function setTheme(theme, persist) {
