@@ -33,7 +33,7 @@
         --toggle: #e3e3e3;
         --toggle-bg: #474a52;
         --hover: #26282c;
-        --default-font: font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        --default-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 }
 
@@ -48,26 +48,25 @@ body {
 }
 
 h2 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     margin-bottom: 4rem;
     text-align: center;
     color: var(--title-color);
 }
 
 p {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     color: var(--description-color);
 }
 
 a {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     color: var(--description-color);
 }
 
 /* Navigation Bar */
 
 .skipNavLink {
-    /* border: 2px solid red; */
     background-color: #fa3939;
     padding: 0.5rem;
     border-radius: 0 0 8px 8px;
@@ -100,7 +99,7 @@ a {
 
 .navbar .navlink {
     /* font-family: 'Roboto Slab', serif; */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     float: left;
     display: block;
     color: var(--title-color);
@@ -250,7 +249,7 @@ input:checked+.slider:before {
     margin: auto;
     width: 70%;
     text-align: left;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     color: var(--description-color);
 }
 
@@ -263,13 +262,13 @@ input:checked+.slider:before {
 
 #name {
     font-size: 5rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     margin: 0px 0px 0px 0px;
     color: var(--title-color);
 }
 
 #nameDesc {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     font-size: 2.5rem;
     margin: 0px 0px 0px 0px;
     color: var(--caption-color);
@@ -293,7 +292,7 @@ input:checked+.slider:before {
 }
 
 .letsTalkButton {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     margin-top: 0.53vh;
     border-style: solid;
     border-color: var(--accent-color);
@@ -442,14 +441,14 @@ input:checked+.slider:before {
 .projectTitles {
     clear: both;
     margin-top: 4rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--title-color);
 }
 
 .projectDesc {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     margin-top: 2rem;
     margin-right: 2rem;
     color: var(--description-color);
@@ -501,7 +500,7 @@ input:checked+.slider:before {
 
 .projectCollapseButton {
     background-color: var(--background-color);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     color: var(--title-color);
     font-weight: bold;
     cursor: pointer;
@@ -660,7 +659,7 @@ input:checked+.slider:before {
 .contactDesc {
     width: 60%;
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     font-size: 1.5rem;
     margin: 5rem auto;
     color: var(--description-color);
@@ -772,7 +771,7 @@ input:checked+.slider:before {
 /* About Page */
 
 #about {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--default-font);
     width: 80%;
     margin: 0 auto;
 }
