@@ -720,7 +720,7 @@ input:checked+.slider:before {
     #adobe-dc-view {
         width: 90%;
         margin: 0 auto;
-        box-shadow: 1px 1px 10px 1px #dadada;
+        box-shadow: 1px 1px 10px 1px var(--boxshadow);
     }
 }
 
