@@ -19,11 +19,17 @@ function hamburgerMenu() {
     if (x.className == "navbar") {
         x.className += " responsive";
         y.style.display = "none";
-        document.getElementById("hamburgerMenuImage").src = "../assets/images/exit.svg"
+        document.getElementById("hamburgerMenuImage").style.visibility = "hidden"
+        document.getElementById("exitMenuImage").style.visibility = "visible"
+        document.getElementById("hamburgerMenuImage").style.opacity = "0"
+        document.getElementById("exitMenuImage").style.opacity = "1"
     } else {
         x.className = "navbar";
         y.style.display = "initial";
-        document.getElementById("hamburgerMenuImage").src = "../assets/images/hamburger.svg"
+        document.getElementById("hamburgerMenuImage").style.visibility = "visible"
+        document.getElementById("exitMenuImage").style.visibility = "hidden"
+        document.getElementById("hamburgerMenuImage").style.opacity = "1"
+        document.getElementById("exitMenuImage").style.opacity = "0"
     }
 }
 

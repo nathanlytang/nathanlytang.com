@@ -113,10 +113,21 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+
+    #exitMenuImage {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    #hamburgerMenuImage {
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+
     .navbar .navlink {
         display: none;
         visibility: hidden;
-        transition: ease-in-out 0.2s;
     }
 
     #navFloat {
@@ -166,7 +177,6 @@ a {
         text-align: center;
         margin: 0 0rem 1rem 0;
         visibility: visible;
-        transition: ease-in-out 0.2s;
     }
 }
 
