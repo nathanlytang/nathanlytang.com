@@ -15,11 +15,14 @@ function typeText() {
 // Responsive menu
 function hamburgerMenu() {
     var x = document.getElementById("navbar");
+    var y = document.getElementById("logo");
     if (x.className == "navbar") {
         x.className += " responsive";
+        y.style.display = "none";
         document.getElementById("hamburgerMenuImage").src = "../assets/images/exit.svg"
     } else {
         x.className = "navbar";
+        y.style.display = "initial";
         document.getElementById("hamburgerMenuImage").src = "../assets/images/hamburger.svg"
     }
 }
