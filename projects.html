@@ -46,7 +46,7 @@
         <div id="projects-page" class="projects">
             <h2>Projects.</h2>
 
-            <p id="project-page-desc" class="projectDesc">Some more projects I have worked on!</p>
+            <p id="project-page-desc" class="projectDesc">The catalog of projects I have worked on over the years</p>
 
             <div id="projectCollapse">
 
@@ -56,14 +56,19 @@
                 <div class="projectCollapseExpanded">
                     <button class="projectCollapseButton">Steve</button>
                     <div class="projectCollapseGallery">
+                        <p><a class="projectCollapseExternLink" target="_blank" rel="noopener noreferrer"
+                                href="https://discord.com/api/oauth2/authorize?client_id=773117222380896276&permissions=18432&scope=applications.commands%20bot"><img
+                                    class="CollapseGitLogo" src="assets/images/external-link-48px.png"
+                                    alt="Invite Steve"></a></p>
                         <p><a class="projectCollapseGitLink" target="_blank" rel="noopener noreferrer"
                                 href="https://github.com/nathanlytang/Steve"><img class="CollapseGitLogo"
                                     src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a></p>
-                        <p class="projectCollapseKeywords">{ JS Node.js Docker MySQL }</p>
+                        <p class="projectCollapseKeywords">{ Typescript Node.js Docker MySQL }</p>
                         <div class="projectCollpaseDescSec">
                             <p class="projectCollapseDesc">A Discord bot built for gaming communities. Provides an
                                 easily
-                                accessible and status panel for Minecraft servers.</p>
+                                accessible and status panel for Minecraft servers, in over 300 servers, with thousands
+                                of users.</p>
                             <p class="projectCollapseDesc"><b>Why: </b>As I host a Minecraft server for myself and my
                                 friends, I wanted an easy way to display the online status, version, and player count of
                                 the
@@ -73,13 +78,40 @@
                                 had to tweak my algorithms and methods a lot as I added features so that it would not
                                 ping
                                 servers unecessarily and eat up network bandwidth.</p>
-                            <p class="projectCollapseDesc"><b>What I learned: </b>I learned how to gracefully handle
-                                errors
-                                such that the bot would remain user friendly, and would not crash upon encountering user
-                                error.</p>
+                            <p class="projectCollapseDesc"><b>What I learned: </b>My most publically used application, I
+                                learned how to gracefully handle errors such that the bot would remain user friendly
+                                and would not crash upon encountering user error, as well as data privacy management.
+                            </p>
                         </div>
                         <img class="projectImage" style="border-radius: 5px" src="assets/images/preview_steve.webp"
                             alt="Steve preview image">
+                    </div>
+                </div>
+
+                <div class="projectCollapseExpanded">
+                    <button class="projectCollapseButton">RestoreTab</button>
+                    <div class="projectCollapseGallery">
+                        <p><a class="projectCollapseExternLink" target="_blank" rel="noopener noreferrer"
+                                href="https://chrome.google.com/webstore/detail/restoretab/kbfbmnmofenbagpdmjnmaknjlpdgcjcc"><img
+                                    class="CollapseGitLogo" src="assets/images/external-link-48px.png"
+                                    alt="Chrome Web Store"></a></p>
+                        <p><a class="projectCollapseGitLink" target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/nathanlytang/RestoreTab"><img class="CollapseGitLogo"
+                                    src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a></p>
+                        <p class="projectCollapseKeywords">{ ChromeAPI HTML CSS Javascript }</p>
+                        <div class="projectCollpaseDescSec">
+                            <p class="projectCollapseDesc">A Google Chrome extension to keep track of your browsing
+                                sessions and restore tabs from a
+                                crash, Incognito included. All locally.</p>
+                            <p class="projectCollapseDesc"><b>Why: </b>I have the habit of opening too many Chrome tabs
+                                and have had Chrome crash on me many times, resulting in me losing all my work.</p>
+                            <!-- <p class="projectCollapseDesc"><b>Challenges: </b></p> -->
+                            <p class="projectCollapseDesc"><b>What I learned: </b>This was my first dive into the Google
+                                Chrome API. I learned how to build extensions, and utilise Chrome's extensive library of
+                                functions.</p>
+                        </div>
+                        <!-- <img class="projectImage" style="border-radius: 5px" src="assets/images/preview_steve.webp"
+                            alt="Steve preview image"> -->
                     </div>
                 </div>
 
@@ -92,7 +124,7 @@
                         <p><a class="projectCollapseGitLink" target="_blank" rel="noopener noreferrer"
                                 href="https://github.com/nathanlytang/mcstatus"><img class="CollapseGitLogo"
                                     src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a></p>
-                        <p class="projectCollapseKeywords">{ TS React Node.js Express }</p>
+                        <p class="projectCollapseKeywords">{ Typescript React Node.js Express }</p>
                         <div class="projectCollpaseDescSec">
                             <p class="projectCollapseDesc">An extension of my <a target="_blank"
                                     rel="noopener noreferrer" href="https://github.com/nathanlytang/steve">Discord bot
@@ -113,6 +145,27 @@
                 </div>
 
                 <div class="projectCollapseExpanded">
+                    <button class="projectCollapseButton">log2discord</button>
+                    <div class="projectCollapseGallery">
+                        <p><a class="projectCollapseExternLink" target="_blank" rel="noopener noreferrer"
+                                href="https://www.npmjs.com/package/log2discord"><img class="CollapseGitLogo"
+                                    src="assets/images/external-link-48px.png" alt="Invite Steve"></a></p>
+                        <p><a class="projectCollapseGitLink" target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/nathanlytang/log2discord"><img class="CollapseGitLogo"
+                                    src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a></p>
+                        <p class="projectCollapseKeywords">{ Typescript Node.js }</p>
+                        <div class="projectCollpaseDescSec">
+                            <p class="projectCollapseDesc">A logging module to send events and errors to a Discord text
+                                channel using webhooks,</p>
+                            <p class="projectCollapseDesc"><b>Why: </b>My preferred method of receiving errors for my
+                                publically hosted applications. This solution allows me to keep a record of all previous
+                                errors, and give me the details required to understand the severity of an event at a
+                                moment's notice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projectCollapseExpanded">
                     <button class="projectCollapseButton">wg-cli</button>
                     <div class="projectCollapseGallery">
                         <p><a class="projectCollapseGitLink" target="_blank" rel="noopener noreferrer"
@@ -120,20 +173,20 @@
                                     src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a></p>
                         <p class="projectCollapseKeywords">{ C Bash }</p>
                         <div class="projectCollpaseDescSec">
-                            <p class="projectCollapseDesc">wg-cli is a CLI tool that manages Wireguard™ virtual private
+                            <p class="projectCollapseDesc">wg-cli is a CLI tool that manages Wireguard® virtual private
                                 network (VPN) peers.</p>
-                            <p class="projectCollapseDesc"><b>Why: </b>Adding and removing peer devices in Wireguard is
-                                time
-                                consuming, so I built this app to automate the process and speed up my workflow by 10x.
+                            <p class="projectCollapseDesc"><b>Why: </b>Adding and removing peer devices in the Wireguard
+                                CLI is
+                                time consuming, so I built this app to automate the process and speed up my workflow by
+                                10x.
                             </p>
                             <p class="projectCollapseDesc"><b>Challenges: </b>Building the <code>remove-peer</code>
                                 function. Due to the lack of unique peer identifiers in Wireguard, I essentially had to
                                 parse the configuration twice in order to remove a peer.</p>
                             <p class="projectCollapseDesc"><b>What I learned: </b>Because the C language does not have
                                 built-in garbage collection, I learned how to best manage resources so that there would
-                                not
-                                be any memory leaks. This including using Valgrind, a memory debugging tool, to test my
-                                program.</p>
+                                not be any memory leaks. This including using Valgrind, a memory debugging tool, to test
+                                my program.</p>
                         </div>
                         <img class="projectImage" style="border-radius: 5px; width: 100%"
                             src="assets/images/preview_wg-cli.webp" alt="wg-cli preview image">
@@ -173,7 +226,7 @@
                         <p><a class="projectCollapseGitLink" target="_blank" rel="noopener noreferrer"
                                 href="https://github.com/nathanlytang/Inhabit"><img class="CollapseGitLogo"
                                     src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a></p>
-                        <p class="projectCollapseKeywords">{ HTML CSS JS Electron Node.js React-Native }</p>
+                        <p class="projectCollapseKeywords">{ Electron Node.js React-Native }</p>
                         <div class="projectCollpaseDescSec">
                             <p class="projectCollapseDesc">Inhabit is a to-do desktop (Windows) and mobile (Android/iOS)
                                 app
@@ -252,7 +305,7 @@
                                 href="https://github.com/nathanlytang/SimpleImageAnnotationTool"><img
                                     class="CollapseGitLogo" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a>
                         </p>
-                        <p class="projectCollapseKeywords">{ TS JS JSON }</p>
+                        <p class="projectCollapseKeywords">{ Typescript Javascript JSON }</p>
                         <div class="projectCollpaseDescSec">
                             <p class="projectCollapseDesc">This tool serves to annotate "interesting" and
                                 "non-interesting"
@@ -325,7 +378,7 @@
                         <p><a class="projectCollapseGitLink" target="_blank" rel="noopener noreferrer"
                                 href="https://github.com/nathanlytang/nathanlytang.com"><img class="CollapseGitLogo"
                                     src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a></p>
-                        <p class="projectCollapseKeywords">{ HTML CSS JS }</p>
+                        <p class="projectCollapseKeywords">{ HTML CSS Javascript }</p>
                         <div class="projectCollpaseDescSec">
                             <p class="projectCollapseDesc">The website you are looking at right now!</p>
                             <p class="projectCollapseDesc"><b>Why: </b>To challenge and showcase my understanding of web
@@ -344,14 +397,15 @@
                 </div>
 
                 <div class="projectCollapseExpanded">
-                    <button class="projectCollapseButton">Polaris Server</button>
+                    <button class="projectCollapseButton">Milky Way Cluster</button>
                     <div class="projectCollapseGallery">
                         <!-- <p><a class="projectCollapseGitLink" target="_blank" rel="noopener noreferrer" href=""><img class="CollapseGitLogo" src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a></p> -->
                         <p class="projectCollapseKeywords">{ Linux Docker Proxmox }</p>
                         <div class="projectCollpaseDescSec">
-                            <p class="projectCollapseDesc">Polaris is my homelab, a server running Proxmox that hosts my
-                                internal services, including Pihole, Wireguard, Nginx, Plex, Home Assistant, Codeserver,
-                                Pterodactyl Panel, and various Docker applications. This server also runs some external
+                            <p class="projectCollapseDesc">My homelab, consisting of multiple servers running Proxmox
+                                High Availability, hosting my
+                                internal services, such as Pihole, Wireguard, Nginx, Plex, Home Assistant, Codeserver,
+                                Pterodactyl Panel, and many Docker applications. This server also runs some external
                                 applications that I have built, including my Discord bot <a
                                     href="https://github.com/nathanlytang/Steve" target="_blank"
                                     rel="noopener noreferrer">Steve</a>.</p>
