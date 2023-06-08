@@ -64,6 +64,10 @@ a {
     color: var(--description-color);
 }
 
+.page-title {
+    border: 1px solid var(--background-color);
+}
+
 /* Navigation Bar */
 
 .skipNavLink {
