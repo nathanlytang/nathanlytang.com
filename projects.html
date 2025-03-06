@@ -12,8 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="title" content="Nathan Tang's Projects">
-    <meta name="description"
-        content="Hi there! I'm Nathan, a software engineer in Edmonton, CA.">
+    <meta name="description" content="Hi there! I'm Nathan, a software engineer in Edmonton, CA.">
 
 </head>
 
@@ -28,6 +27,7 @@
                     <a href='index.html' class="navlink">Home</a>
                     <a href='about.html' class="navlink">About</a>
                     <a href='projects.html' class="navlink">Projects</a>
+                    <!-- <a href='visuals.html' class="navlink">Visuals</a> -->
                     <a href='resume.html' class="navlink">Resume</a>
                     <a href='index.html#contactIndex' class="navlink">Contact</a>
                     <label class="switch navlink" title="Toggle dark mode"><input id="toggle" type="checkbox"><span
@@ -46,12 +46,43 @@
         <div id="projects-page" class="projects">
             <h2 class="page-title">Projects.</h2>
 
-            <p id="project-page-desc" class="projectDesc">The catalogue of projects I have worked on over the years</p>
+            <p id="project-page-desc" class="projectDesc">A small catalogue of projects I have worked on over the years.</p>
 
             <div id="projectCollapse">
 
                 <button id="projectExpandButton" type="button" value="collapsed" onclick="expandAll(this)">Expand All
                     ▼</button>
+
+                <div class="projectCollapseExpanded">
+                    <button class="projectCollapseButton">Minnow Monocle</button>
+                    <div class="projectCollapseGallery">
+                        <p><a class="projectCollapseExternLink" target="_blank" rel="noopener noreferrer"
+                                href="https://www.aquaticbiosphere.ca/post/release-the-minnow-exciting-action-at-the-edmonton-boat-and-sportsmen-s-show"><img
+                                    class="CollapseGitLogo" src="assets/images/external-link-48px.png"
+                                    alt="Aquatic Biosphere Community Post"></a></p>
+                        <p><a class="projectCollapseExternLink" target="_blank" rel="noopener noreferrer"
+                                href="https://www.aquaticbiosphere.ca/post/the-minnow-s-amazing-summer"><img
+                                    class="CollapseGitLogo" src="assets/images/external-link-48px.png"
+                                    alt="Aquatic Biosphere Community Post"></a></p>
+                        <p class="projectCollapseKeywords">{ Flutter Python Svelte OpenCV Azure }</p>
+                        <div class="projectCollpaseDescSec">
+                            <p class="projectCollapseDesc">Minnow Monocle is a mobile game developed for the Aquatic
+                                Biosphere Society of Canada. Players scan murals with their cameras to "discover"
+                                various animals. Upon discovery, players are provided detailed information about each
+                                animal, including educational content and interesting facts. Additionally, users can
+                                engage with interactive games and quizzes related to the animals on the mural, making
+                                learning about Alberta's land and aquatic wildlife fun and engaging.
+                            </p>
+                            <p class="projectCollapseDesc">This project was showcased and demoed live at the Edmonton
+                                Boat and Sportsman's Show.</p>
+                            <p class="projectCollapseDesc">In this project, I developed the visual recognition system
+                                using OpenCV, and practiced building a fast and secure backend with a REST API and
+                                Google authentication. I also built the administration panel for the client to manage
+                                the game, users, and add additional content. The entire project was deployed onto
+                                Microsoft Azure for high availability and scalability.</p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="projectCollapseExpanded">
                     <button class="projectCollapseButton">Steve</button>
@@ -77,8 +108,8 @@
                                 fast, I
                                 had to tweak my algorithms and methods a lot as I added features so that it would not
                                 ping
-                                servers unecessarily and eat up network bandwidth.</p>
-                            <p class="projectCollapseDesc"><b>What I learned: </b>My most publically used application, I
+                                servers unnecessarily and eat up network bandwidth.</p>
+                            <p class="projectCollapseDesc"><b>What I learned: </b>My most publicly used application, I
                                 learned how to gracefully handle errors such that the bot would remain user friendly
                                 and would not crash upon encountering user error, as well as data privacy management.
                             </p>
@@ -110,8 +141,35 @@
                                 Chrome API. I learned how to build extensions, and utilise Chrome's extensive library of
                                 functions.</p>
                         </div>
-                        <!-- <img class="projectImage" style="border-radius: 5px" src="assets/images/preview_steve.webp"
-                            alt="Steve preview image"> -->
+                        <img class="projectImage" style="border-radius: 5px" src="assets/images/preview_restoretab.webp"
+                            alt="RestoreTab preview image">
+                    </div>
+                </div>
+
+                <div class="projectCollapseExpanded">
+                    <button class="projectCollapseButton">RepRooster</button>
+                    <div class="projectCollapseGallery">
+                        <p><a class="projectCollapseExternLink" target="_blank" rel="noopener noreferrer"
+                                href="https://chromewebstore.google.com/detail/reprooster/keoekakdfedokncapiiiaekjpfhigike"><img
+                                    class="CollapseGitLogo" src="assets/images/external-link-48px.png"
+                                    alt="Chrome Web Store"></a></p>
+                        <p><a class="projectCollapseGitLink" target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/nathanlytang/RepRooster"><img class="CollapseGitLogo"
+                                    src="assets/images/GitHub-Mark-120px.svg" alt="Github"></a></p>
+                        <p class="projectCollapseKeywords">{ ChromeAPI Svelte Typescript }</p>
+                        <div class="projectCollpaseDescSec">
+                            <p class="projectCollapseDesc">A Google Chrome extension that sends short exercise reminders
+                                to build a daily habit.</p>
+                            <p class="projectCollapseDesc"><b>Why: </b>As someone who works from home, being sedentary
+                                for so many hours of the day, this extension helps me get out of the chair once in a
+                                while to keep the body moving.</p>
+                            <!-- <p class="projectCollapseDesc"><b>Challenges: </b></p> -->
+                            <p class="projectCollapseDesc"><b>What I learned: </b>I got the opportunity to practice
+                                using the Svelte frontend framework, as well as Chrome's alarm and notification APIs.
+                            </p>
+                        </div>
+                        <img class="projectImage" style="border-radius: 5px" src="assets/images/preview_reprooster.webp"
+                            alt="RepRooster preview image">
                     </div>
                 </div>
 

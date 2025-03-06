@@ -662,6 +662,7 @@ input:checked+.slider:before {
     display: block;
     margin: 2vh auto;
     box-shadow: 1px 1px 10px 1px var(--boxshadow);
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -889,6 +890,34 @@ input:checked+.slider:before {
     width: 100%;
     margin: 0 auto;
 } */
+
+
+
+/* Visuals Page */
+
+@media only screen and (min-width: 1200px) {
+    #visualsDesc {
+        width: 40%;
+        margin: 7vh auto;
+        color: var(--description-color);
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    #visualsDesc {
+        width: 70%;
+        margin: 7vh auto;
+        color: var(--description-color);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #visualsDesc {
+        width: 90%;
+        margin: 7vh auto;
+        color: var(--description-color);
+    }
+}
 
 
 
